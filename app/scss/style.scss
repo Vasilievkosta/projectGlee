@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1770px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -142,11 +142,30 @@ body {
     margin: 0 auto;
 }
 
-.slider__inner {
-    background-color: $fone-color;
+.slider__wrap {
+    display: flex;
+}
+
+.slider__title {
     @extend %rubik-500;
-    font-size: 70px;
-    color: $first-color
+    font-size: 72px;
+    color: #243f4d;
+}
+
+.slider__text {
+    font-family: 'Rubik-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.75;
+    color: #243f4d;
+}
+
+.slider__link {
+    background-color: #cecece;
+    font-family: 'Rubik-Medium', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
 }
 
 
