@@ -259,7 +259,7 @@ main {
         width: 25px;
         height: 10px;
         background-repeat: no-repeat;
-        background-size: container;
+        background-size: contain;
     }
 }
 
@@ -526,6 +526,10 @@ main {
 
     &__text {
         margin-bottom: 20px;
+    }
+
+    &__label {
+        display: none;
     }
 
     &__form-input {
