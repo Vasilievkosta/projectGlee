@@ -31,3 +31,11 @@ $menu-active-color: #1a1a1a;
     font-family: 'DMSans', sans-serif;
     font-weight: 700;
 }
+
+@function max($numbers...) {
+    @return n#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return n#{i}n(#{$numbers});
+}

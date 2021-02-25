@@ -12,6 +12,7 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 const del = require('del');
+const svgSprite = require('gulp-svg-sprite');
 
 function browsersync() {
     browserSync.init({
@@ -36,10 +37,23 @@ function styles() {
         .pipe(browserSync.stream())
 }
 
+function svgSprites() {
+    return src('app/images/**/*.svg')
+        .pipe(svgSprite({
+            mode: {
+                stack: {
+                    sprite: 'sprite.svg'
+                }
+            }
+        }))
+        .pipe(dest('app/images'))
+}
+
 function scripts() {
     return src([
             'node_modules/jquery/dist/jquery.js',
             'node_modules/slick-carousel/slick/slick.js',
+            'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
             'app/js/main.js'
         ])
         .pipe(concat('main.min.js'))
@@ -79,7 +93,8 @@ function cleanDist() {
 function watching() {
     watch(['app/scss/**/*.scss'], styles);
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-    watch(['app/**/*.html']).on('change', browserSync.reload)
+    watch(['app/**/*.html']).on('change', browserSync.reload);
+    // watch(['app/images/**/*.svg'], svgSprites);
 }
 
 exports.styles = styles;
@@ -90,4 +105,5 @@ exports.images = images;
 exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build);
 
+// exports.default = parallel(styles, scripts, svgSprites, browsersync, watching);
 exports.default = parallel(styles, scripts, browsersync, watching);
