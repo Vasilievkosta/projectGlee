@@ -32,6 +32,16 @@ $menu-active-color: #1a1a1a;
     font-weight: 700;
 }
 
+%poppins-700 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+%myriadpro-400 {
+    font-family: 'MyriadPro', sans-serif;
+    font-weight: 400;
+}
+
 @function max($numbers...) {
     @return n#{a}x(#{$numbers});
 }

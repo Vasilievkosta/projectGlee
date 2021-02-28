@@ -103,6 +103,7 @@ exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
+exports.svgSprites = svgSprites;
 exports.build = series(cleanDist, images, build);
 
 // exports.default = parallel(styles, scripts, svgSprites, browsersync, watching);
