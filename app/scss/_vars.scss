@@ -7,6 +7,11 @@ $title-color: #191919;
 $menu-color: #8b8b8b;
 $menu-active-color: #1a1a1a;
 
+%rubik-300 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
 %rubik-400 {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
@@ -15,6 +20,11 @@ $menu-active-color: #1a1a1a;
 %rubik-500 {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
+}
+
+%rubik-700 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
 }
 
 %dmsans-400 {
@@ -32,6 +42,11 @@ $menu-active-color: #1a1a1a;
     font-weight: 700;
 }
 
+%poppins-600 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
 %poppins-700 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -40,6 +55,11 @@ $menu-active-color: #1a1a1a;
 %myriadpro-400 {
     font-family: 'MyriadPro', sans-serif;
     font-weight: 400;
+}
+
+%nunitoo-700 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
 }
 
 @function max($numbers...) {

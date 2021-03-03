@@ -1,5 +1,15 @@
 @font-face {
     font-family: 'Rubik';
+    font-weight: 300;
+    font-style: normal;
+    src:
+        url('../fonts/Rubik-Light.woff2') format('woff2'),
+        url('../fonts/Rubik-Light.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
     font-weight: 400;
     font-style: normal;
     src:
@@ -15,6 +25,16 @@
     src:
         url('../fonts/Rubik-Medium.woff2') format('woff2'),
         url('../fonts/Rubik-Medium.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-style: normal;
+    src:
+        url('../fonts/Rubik-Bold.woff2') format('woff2'),
+        url('../fonts/Rubik-Bold.woff') format('woff');
     font-display: swap;
 }
 
@@ -50,6 +70,16 @@
 
 @font-face {
     font-family: 'Poppins';
+    font-weight: 600;
+    font-style: normal;
+    src:
+        url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
     font-weight: 700;
     font-style: normal;
     src:
@@ -65,5 +95,15 @@
     src:
         url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
         url('../fonts/MyriadPro-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-style: normal;
+    src:
+        url('../fonts/Nunito-Bold.woff2') format('woff2'),
+        url('../fonts/Nunito-Bold.woff') format('woff');
     font-display: swap;
 }
