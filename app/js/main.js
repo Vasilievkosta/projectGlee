@@ -15,4 +15,17 @@ $(function () {
 
     })
 
+    // $('.footer-top__title').on('click', function () {
+    //     $(this).next().slideToggle();
+    //     $(this).toggleClass('footer-top__list--active');
+    // });
+
+});
+
+let burger = document.querySelector('.menu__btn');
+let menu = document.querySelector('.menu__list');
+
+burger.addEventListener('click', function () {
+    burger.classList.toggle('menu__btn--active');
+    menu.classList.toggle('menu__list--active');
 });
