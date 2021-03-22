@@ -389,12 +389,12 @@ path {
         color: $default-color;
     }
 
-    &__btn {
+    &__link {
         @extend %rubik-500;
         width: 200px;
         background-color: $icon-active-color;
         color: #fff;
-        padding: 23px 0;
+        padding: 23px 50px;
         border: 1px solid transparent;
 
 
@@ -402,14 +402,14 @@ path {
             margin: 0 auto;
         }
 
-        &--text {
-            margin-left: -85px;
-        }
+        // &--text {
+        //     margin-left: -85px;
+        // }
 
-        &:focus {
-            border: 1px solid $default-color;
-            outline: 0;
-        }
+        // &:focus {
+        //     border: 1px solid $default-color;
+        //     outline: 0;
+        // }
 
         &:hover {
             color: $first-color;
@@ -438,6 +438,7 @@ path {
         left: 80%;
     }
 }
+
 
 .advantage {
     background-color: #fff7f0;
@@ -558,9 +559,9 @@ path {
             color: $first-color;
         }
 
-        &:active {
-            color: $menu-active-color;
-        }
+        // &:active {
+        //     color: $menu-active-color;
+        // }
     }
 }
 

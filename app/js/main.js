@@ -20,6 +20,18 @@ $(function () {
     //     $(this).toggleClass('footer-top__list--active');
     // });
 
+    var containerProduct = document.querySelector('[data-ref="container-product"]');
+    var containerDesign = document.querySelector('[data-ref="container-design"]');
+
+    var config = {
+        controls: {
+            scope: 'local'
+        }
+    };
+
+    var mixer1 = mixitup(containerProduct, config);
+    var mixer2 = mixitup(containerDesign, config);
+
 });
 
 let burger = document.querySelector('.menu__btn');

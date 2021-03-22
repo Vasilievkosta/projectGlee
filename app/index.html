@@ -16,15 +16,14 @@
         <div class="container">
             <nav class="nav">
                 <a class="logo" href="#">
-                    <span class="sr-only"> Logo image </span>
                     <img class="logo__img" src="images/logo.png" alt="logo">
                 </a>
                 <div class="menu">
 
                     <button class="menu__btn">
                         <span class="sr-only">Open menu</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px"
-                            height="16px">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17"
+                            height="16">
                             <path fill-rule="evenodd" fill="#243f4d"
                                 d="M-0.000,-0.000 L17.000,-0.000 L17.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z" />
                             <path fill-rule="evenodd" fill="#243f4d"
@@ -108,13 +107,12 @@
                                             tempor incididunt
                                         </p>
                                     </div>
-                                    <button class="btn myslider__btn" type="button">
-                                        <span class="myslider__btn--text">Shop Now</span>
+                                    <a class="btn myslider__link" href="#">
+                                        Shop Now
                                         <svg class="svg myslider__svg" fill="#fff" width="22" height="9">
                                             <use xlink:href="images/stack/sprite.svg#icon--arrow"></use>
                                         </svg>
-                                        <span class="sr-only">shop now icon </span>
-                                    </button>
+                                    </a>
                                 </div>
                                 <img class="myslider__img" src="images/sofa.png" alt="Sofa">
                             </div>
@@ -130,13 +128,12 @@
                                             tempor incididunt
                                         </p>
                                     </div>
-                                    <button class="btn myslider__btn" type="button">
-                                        <span class="myslider__btn--text">Shop Now</span>
+                                    <a class="btn myslider__link" href="#">
+                                        Shop Now
                                         <svg class="svg myslider__svg" fill="#fff" width="22" height="9">
                                             <use xlink:href="images/stack/sprite.svg#icon--arrow"></use>
                                         </svg>
-                                        <span class="sr-only">shop now icon </span>
-                                    </button>
+                                    </a>
                                 </div>
                                 <img class="myslider__img" src="images/sofa.png" alt="Sofa">
                             </div>
@@ -152,13 +149,12 @@
                                             tempor incididunt
                                         </p>
                                     </div>
-                                    <button class="btn myslider__btn" type="button">
-                                        <span class="myslider__btn--text">Shop Now</span>
+                                    <a class="btn myslider__link" href="#">
+                                        Shop Now
                                         <svg class="svg myslider__svg" fill="#fff" width="22" height="9">
                                             <use xlink:href="images/stack/sprite.svg#icon--arrow"></use>
                                         </svg>
-                                        <span class="sr-only">shop now icon </span>
-                                    </button>
+                                    </a>
                                 </div>
                                 <img class="myslider__img" src="images/sofa.png" alt="Sofa">
                             </div>
@@ -204,32 +200,32 @@
 
         <section class="product">
             <div class="container">
-                <div class="wrap">
+                <div class="wrap" data-ref="container-product">
                     <h2 class="title">
                         Products of the week
                     </h2>
 
                     <ul class="mix-nav__list">
                         <li class="mix-nav__item">
-                            <a class="mix-nav__link mix-nav__link--active" href="#">All</a>
+                            <button class="mix-nav__link" type="button" data-filter="all">All</button>
                         </li>
                         <li class="mix-nav__item">
-                            <a class="mix-nav__link" href="#">Furnitures</a>
+                            <button class="mix-nav__link" type="button" data-filter=".category-a">Furnitures</button>
                         </li>
                         <li class="mix-nav__item">
-                            <a class="mix-nav__link" href="#">Chairs</a>
+                            <button class="mix-nav__link" type="button" data-filter=".category-b">Chairs</button>
                         </li>
                         <li class="mix-nav__item">
-                            <a class="mix-nav__link" href="#">Lighting</a>
+                            <button class="mix-nav__link" type="button" data-filter=".category-c">Lighting</button>
                         </li>
-                        <li class="mix-nav__item">
-                            <a class="mix-nav__link" href="#">Decor</a>
+                        <li class="mix-nav__item"></li>
+                        <button class="mix-nav__link" type="button" data-filter=".category-d">Decor</button>
                         </li>
                     </ul>
 
                     <ul class="product__inners">
 
-                        <li class="product__inner">
+                        <li class="product__inner mix category-c">
                             <article class="product__card">
                                 <div class="product__wrap">
                                     <img class="product__img" src="images/content/img1.png" alt="product image">
@@ -272,7 +268,7 @@
                                 </div>
                             </article>
                         </li>
-                        <li class="product__inner">
+                        <li class="product__inner mix category-b">
                             <article class="product__card">
                                 <div class="product__wrap">
                                     <img class="product__img" src="images/content/img2.png" alt="product image">
@@ -315,7 +311,7 @@
                                 </div>
                             </article>
                         </li>
-                        <li class="product__inner">
+                        <li class="product__inner mix category-b">
                             <article class="product__card">
                                 <div class="product__wrap">
                                     <img class="product__img" src="images/content/img3.png" alt="product image">
@@ -358,7 +354,7 @@
                                 </div>
                             </article>
                         </li>
-                        <li class="product__inner">
+                        <li class="product__inner mix category-d">
                             <article class="product__card">
                                 <div class="product__wrap">
                                     <img class="product__img" src="images/content/img4.png" alt="product image">
@@ -401,7 +397,7 @@
                                 </div>
                             </article>
                         </li>
-                        <li class="product__inner">
+                        <li class="product__inner mix category-c">
                             <article class="product__card">
                                 <div class="product__wrap">
                                     <img class="product__img" src="images/content/img5.png" alt="product image">
@@ -444,7 +440,7 @@
                                 </div>
                             </article>
                         </li>
-                        <li class="product__inner">
+                        <li class="product__inner mix category-b">
                             <article class="product__card">
                                 <div class="product__wrap">
                                     <img class="product__img" src="images/content/img6.png" alt="product image">
@@ -487,7 +483,7 @@
                                 </div>
                             </article>
                         </li>
-                        <li class="product__inner">
+                        <li class="product__inner mix category-b category-a">
                             <article class="product__card">
                                 <div class="product__wrap">
                                     <img class="product__img" src="images/content/img7.png" alt="product image">
@@ -530,7 +526,7 @@
                                 </div>
                             </article>
                         </li>
-                        <li class="product__inner">
+                        <li class="product__inner mix category-a category-d">
                             <article class="product__card">
                                 <div class="product__wrap">
                                     <img class="product__img" src="images/content/img8.png" alt="product image">
@@ -623,51 +619,55 @@
         </section>
 
         <section class="design">
-            <div class="wrap">
+            <div class="wrap" data-ref="container-design">
                 <h2 class="title">
                     New Design
                 </h2>
 
                 <ul class="mix-nav__list">
                     <li class="mix-nav__item">
-                        <a class="mix-nav__link mix-nav__link--active" href="#">All</a>
+                        <button class="mix-nav__link" type="button" data-filter="all">All</button>
                     </li>
                     <li class="mix-nav__item">
-                        <a class="mix-nav__link" href="#">Furnitures</a>
+                        <button class="mix-nav__link" type="button" data-filter=".category-1">Furnitures</button>
                     </li>
                     <li class="mix-nav__item">
-                        <a class="mix-nav__link" href="#">Chairs</a>
+                        <button class="mix-nav__link" type="button" data-filter=".category-2">Chairs</button>
                     </li>
                     <li class="mix-nav__item">
-                        <a class="mix-nav__link" href="#">Lighting</a>
+                        <button class="mix-nav__link" type="button" data-filter=".category-3">Lighting</button>
                     </li>
                     <li class="mix-nav__item">
-                        <a class="mix-nav__link" href="#">Decor</a>
+                        <button class="mix-nav__link" type="button" data-filter=".category-4">Decor</button>
                     </li>
                 </ul>
 
                 <ul class="design__list">
-                    <li class="design__item" style="background-image:url('images/content/img21.png');">
+                    <li class="design__item mix category-1 category-3"
+                        style="background-image:url('images/content/img21.png');">
                         <h3 class="design__title">Beat Flat Pendant Black</h3>
                         <p class="design__text">Classic</p>
                     </li>
-                    <li class="design__item" style="background-image:url('images/content/img22.png');">
+                    <li class="design__item mix category-2 category-4"
+                        style="background-image:url('images/content/img22.png');">
                         <h3 class="design__title">Lampe Sur Pieds Bamboo</h3>
                         <p class="design__text">Classic</p>
                     </li>
-                    <li class="design__item" style="background-image:url('images/content/img23.png');">
+                    <li class="design__item mix category-4 category-1"
+                        style="background-image:url('images/content/img23.png');">
                         <h3 class="design__title">Rattan Rocking Chair</h3>
                         <p class="design__text">Classic</p>
                     </li>
-                    <li class="design__item" style="background-image:url('images/content/img31.png');">
+                    <li class="design__item mix category-4" style="background-image:url('images/content/img31.png');">
                         <h3 class="design__title">Rattan Rocking Chair</h3>
                         <p class="design__text">Classic</p>
                     </li>
-                    <li class="design__item" style="background-image:url('images/content/img32.png');">
+                    <li class="design__item mix category-1" style="background-image:url('images/content/img32.png');">
                         <h3 class="design__title">Rattan Rocking Chair</h3>
                         <p class="design__text">Classic</p>
                     </li>
-                    <li class="design__item" style="background-image:url('images/content/img33.png');">
+                    <li class="design__item mix category-1 category-4"
+                        style="background-image:url('images/content/img33.png');">
                         <h3 class="design__title">Lampe Sur Pieds Bamboo</h3>
                         <p class="design__text">Classic</p>
                     </li>
