@@ -9,7 +9,8 @@ body {
     flex-direction: column;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #fff;
+    color: $title-color;
+    background-color: $bg-color;
 }
 
 main {
@@ -37,4 +38,29 @@ main {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+.svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.linkbtn {
+    font-size: 15px;
+    line-height: 1;
+    padding: 25px 0;
+    display: block;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.title {
+    @extend %dmsans-700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: $title-color;
+    text-align: center;
+    margin-bottom: 25px;
 }

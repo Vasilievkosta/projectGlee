@@ -9,28 +9,54 @@ $(function () {
     })
 
 
-    $('.partners__inner').slick({
-        dots: false,
-        arrows: false
+    $('.partners__list').slick({
+        infinite: true,
+        arrows: false,
+        slidesToShow: 5,
+        slidesToScroll: 3,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
 
-    })
+
+
 
     // $('.footer-top__title').on('click', function () {
     //     $(this).next().slideToggle();
     //     $(this).toggleClass('footer-top__list--active');
     // });
 
-    var containerProduct = document.querySelector('[data-ref="container-product"]');
-    var containerDesign = document.querySelector('[data-ref="container-design"]');
+    const containerProduct = document.querySelector('[data-ref="container-product"]');
+    const containerDesign = document.querySelector('[data-ref="container-design"]');
 
-    var config = {
+    let config = {
         controls: {
             scope: 'local'
         }
     };
 
-    var mixer1 = mixitup(containerProduct, config);
-    var mixer2 = mixitup(containerDesign, config);
+    let mixer1 = mixitup(containerProduct, config);
+    let mixer2 = mixitup(containerDesign, config);
 
 });
 
