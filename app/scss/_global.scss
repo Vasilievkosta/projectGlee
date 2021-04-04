@@ -64,3 +64,51 @@ main {
     text-align: center;
     margin-bottom: 25px;
 }
+
+.mix-nav {
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: $menu-color;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 70px;
+
+    @media (max-width: 575px) {
+        display: block;
+        margin: 0 auto 50px;
+        text-align: center;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 30px;
+
+            @media (max-width: 575px) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__link {
+        border: none;
+        padding: 0;
+        background-color: $bg-color;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.3s;
+
+        &:focus {
+            outline: 0;
+            color: $classic-color;
+        }
+
+        &:hover {
+            border-color: $first-color;
+            color: $first-color;
+        }
+
+        &:active {
+            color: $accent-color;
+        }
+    }
+}

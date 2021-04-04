@@ -3,7 +3,7 @@ $(function () {
     $('.myslider__inner').slick({
         dots: true,
         arrows: false
-        // fade: true,
+        // fade: true
         // autoplay: true,
         // autoplaySead: 2000;
     })
