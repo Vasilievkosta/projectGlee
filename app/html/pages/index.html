@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    @@include('../parts/_header.html')
+
+    <main class="main">
+        <h1 class="sr-only">shop glee</h1>
+
+        @@include('../parts/_myslider.html')
+
+        @@include('../parts/_advantage.html')
+
+        @@include('../parts/_product.html')
+
+        @@include('../parts/_design.html')
+
+        <div class="video" style="background-image: url('images/content/video-bg.jpg');">
+            <a class="video__link" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                <span class="sr-only">Play video</span>
+            </a>
+        </div>
+
+        @@include('../parts/_articles.html')
+
+    </main>
+
+    @@include('../parts/_footer.html')
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

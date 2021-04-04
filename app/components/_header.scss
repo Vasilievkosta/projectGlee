@@ -1,0 +1,234 @@
+﻿.nav {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    &__img {
+        max-height: 39px;
+    }
+}
+
+.menu {
+    @media (max-width: 1023px) {
+        order: 1;
+        margin-left: 20px;
+    }
+
+    @media (max-width: 575px) {
+        order: 0;
+    }
+
+    &__btn {
+        display: none;
+
+        path {
+            transition: transform 0.25s;
+        }
+
+        @media (max-width: 1023px) {
+            display: block;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            outline: 0;
+            cursor: pointer;
+        }
+
+        &--active {
+            & path:nth-of-type(1) {
+                @media (max-width: 1023px) {
+                    transform: rotate(45deg);
+                    transform-origin: -1px 3px;
+                }
+            }
+
+            & path:nth-of-type(2) {
+                @media (max-width: 1023px) {
+                    display: none;
+                }
+            }
+
+            & path:nth-of-type(3) {
+                @media (max-width: 1023px) {
+                    transform: rotate(-45deg);
+                    transform-origin: 0px 13px;
+                }
+            }
+        }
+
+    }
+
+
+    &__list {
+        @extend %rubik-500;
+        font-size: 15px;
+        line-height: 1;
+        color: $default-color;
+        display: flex;
+
+        @media (max-width: 1023px) {
+
+            display: block;
+            /* flex-direction: column; */
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 110px;
+            background-color: #fcd7b6;
+            opacity: 0.95;
+            text-align: center;
+            transform: translateY(-250%);
+            transition: all 0.5s;
+            z-index: 5;
+        }
+
+        @media (max-width: 575px) {
+            top: 200px;
+        }
+
+        &.menu__list--active {
+            @media (max-width: 1023px) {
+                transform: translateY(0%);
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 40px;
+
+        @media (max-width: 1023px) {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.3s;
+
+        @media (max-width: 1023px) {
+            display: block;
+            margin: 20px 0;
+        }
+
+        &:focus {
+            outline: 0;
+            color: $classic-color;
+        }
+
+        &:hover {
+            border-color: $first-color;
+            color: $first-color;
+        }
+
+        &:active {
+            color: $accent-color;
+            border-color: $accent-color;
+        }
+    }
+}
+
+.user-panel {
+    display: flex;
+
+    @media (max-width: 1023px) {
+        margin-left: auto;
+    }
+
+    @media (max-width: 575px) {
+        width: 100%;
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    &__btn {
+
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 0;
+        cursor: pointer;
+        background-color: $icon-color;
+        transition: background-color 0.3s;
+        position: relative;
+
+        &:focus {
+            outline: 0;
+            border: 2px solid $classic-color;
+        }
+
+        &:hover {
+            background-color: $icon-active-color;
+
+            & .svg {
+                fill: $icon-color;
+            }
+        }
+
+        &:active {
+            background-color: $classic-color;
+        }
+    }
+
+    &__link {
+        width: 80px;
+        height: 50px;
+        background-color: $fone-color;
+        transition: background-color 0.3s;
+        position: relative;
+
+        &:focus {
+            outline: 0;
+            border: 2px solid $classic-color;
+        }
+
+        &:hover {
+            background-color: $icon-active-color;
+        }
+
+        &:active {
+            background-color: $classic-color;
+        }
+
+
+        &--one {
+            margin-left: 30px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+
+        &--two {
+            margin-right: 30px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+
+            &::after {
+                content: '';
+                height: 35px;
+                width: 1px;
+                background-color: #fff;
+                position: absolute;
+                top: 8px;
+            }
+        }
+    }
+
+    &__num {
+        width: 16px;
+        height: 16px;
+        font-size: 10px;
+        @extend %dmsans-400;
+        color: $first-color;
+        background-color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 1.6;
+        position: absolute;
+        top: 7px;
+        right: 23px;
+    }
+}
