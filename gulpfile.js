@@ -78,7 +78,7 @@ function images() {
 }
 
 function fileincludes() {
-    return src('app/html/pages/index.html')
+    return src('app/html/pages/*.html')
         .pipe(fileInclude())
         .pipe(dest('app'))
         .pipe(browserSync.stream())
@@ -102,9 +102,10 @@ function cleanDist() {
 function watching() {
     watch(['app/**/*.scss'], styles);
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
+	watch(['app/html/**/*.html'], fileincludes);
     watch(['app/**/*.html']).on('change', browserSync.reload);
-    // watch(['app/images/**/*.svg'], svgSprites);
-    watch(['app/html/**/*.html'], fileincludes);
+    watch(['app/images/**/*.svg'], svgSprites);
+    
 }
 
 exports.styles = styles;
@@ -113,9 +114,10 @@ exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
-exports.svgSprites = svgSprites;
+
 exports.build = series(cleanDist, images, build);
 exports.fileincludes = fileincludes;
+exports.svgSprites = svgSprites;
 
 // exports.default = parallel(styles, scripts, svgSprites, browsersync, watching);
 // exports.default = parallel(styles, scripts, browsersync, watching);

@@ -94,6 +94,7 @@
         background-color: #fef7f0;
         color: #333366;
         margin-right: -4px;
+        outline: 0;
 
         &::-webkit-input-placeholder {
             @extend %dmsans-400;

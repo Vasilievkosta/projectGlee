@@ -13,3 +13,58 @@
 @import '../components/video';
 @import '../components/articles';
 @import '../components/footer';
+
+//styles for About page
+
+.page {
+    &__title {
+        background-color: $icon-color;
+        color: #222933;
+        @extend %rubik-300;
+        font-size: 36px;
+        line-height: 1.4;
+        padding: 30px;
+    }
+
+    &__text {
+        @extend %rubik-400;
+        font-size: 14px;
+        color: #7b8188;
+    }
+}
+
+.service {
+    background-color: $fone-color;
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        padding: 80px 45px;
+        text-align: center;
+    }
+
+    &__img {
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80px;
+        height: 65px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: $first-color;
+        line-height: 2;
+    }
+
+    &__text {
+        @extend %dmsans-700;
+        font-size: 18px;
+        color: $first-color;
+    }
+}
