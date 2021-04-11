@@ -33,6 +33,113 @@
     }
 }
 
+.mission {
+    padding: 120px 0;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        margin-right: 45px;
+    }
+
+    &__number {
+        position: relative;
+        padding: 100px 0 0 180px;
+        margin-bottom: 50px;
+        @extend %rubik-400;
+        font-size: 16px;
+        color: #243f4d;
+        line-height: 2;
+
+        &:before {
+            content: '12';
+            position: absolute;
+            @extend %rubik-700;
+            font-size: 140px;
+            color: #a3bbc8;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__title {
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        @extend %rubik-400;
+        font-size: 16px;
+        color: $first-color;
+        line-height: 2;
+        margin-bottom: 100px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__item {
+        position: relative;
+
+        &-project {
+            &:before {
+                content: '';
+                position: absolute;
+                background-image: url('../images/icon/projects.svg');
+                width: 37px;
+                height: 38px;
+                top: 50%;
+                right: calc(100% + 20px);
+                transform: translateY(-50%);
+            }
+        }
+
+        &-revenue {
+            &:before {
+                content: '';
+                position: absolute;
+                background-image: url('../images/icon/revenue.svg');
+                width: 43px;
+                height: 40px;
+                top: 50%;
+                right: calc(100% + 20px);
+                transform: translateY(-50%);
+            }
+        }
+
+        &-awards {
+            &:before {
+                content: '';
+                position: absolute;
+                background-image: url('../images/icon/awards.svg');
+                width: 42px;
+                height: 42px;
+                top: 50%;
+                right: calc(100% + 20px);
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__stat {
+        @extend %dmsans-700;
+        font-size: 36px;
+        line-height: 1;
+        color: #243f4d;
+    }
+
+    &__name {
+        @extend %dmsans-700;
+        font-size: 16px;
+        color: #4c4c4c;
+    }
+}
+
 .service {
     background-color: $fone-color;
 

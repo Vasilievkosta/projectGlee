@@ -102,10 +102,11 @@ function cleanDist() {
 function watching() {
     watch(['app/**/*.scss'], styles);
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-	watch(['app/html/**/*.html'], fileincludes);
-    watch(['app/**/*.html']).on('change', browserSync.reload);
+    watch('app/html/**/*.html', fileincludes);
+    // watch(['app/**/*.html']).on('change', browserSync.reload);
+
     watch(['app/images/**/*.svg'], svgSprites);
-    
+
 }
 
 exports.styles = styles;
