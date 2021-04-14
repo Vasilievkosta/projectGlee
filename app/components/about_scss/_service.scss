@@ -1,0 +1,35 @@
+.service {
+    background-color: $fone-color;
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        padding: 80px 45px;
+        text-align: center;
+    }
+
+    &__img {
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80px;
+        height: 65px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: $first-color;
+        line-height: 2;
+    }
+
+    &__text {
+        @extend %dmsans-700;
+        font-size: 18px;
+        color: $first-color;
+    }
+}
