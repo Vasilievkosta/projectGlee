@@ -24,6 +24,7 @@
     &__item {
         overflow: hidden;
         cursor: pointer;
+        max-height: 246px;
     }
 }
 
@@ -35,9 +36,10 @@
     &__title {
         @extend %dmsans-700;
         font-size: 20px;
+        line-height: 1.2;
         color: #000;
         max-width: 175px;
-        margin: 30px;
+        margin: 35px;
         position: absolute;
         top: 0;
         z-index: 1;

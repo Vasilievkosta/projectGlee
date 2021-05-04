@@ -132,7 +132,7 @@
         @extend %rubik-500;
         background-color: $icon-active-color;
         color: $bg-color;
-        padding: 23px 100px 23px 50px;
+        padding: 25px 95px 23px 30px;
         border: 1px solid transparent;
 
         @media (max-width: 575px) {
@@ -166,6 +166,6 @@
     }
 
     &__svg {
-        left: 80%;
+        left: 85%;
     }
 }

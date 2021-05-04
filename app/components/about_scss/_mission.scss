@@ -33,6 +33,8 @@
     &__title {
         text-align: left;
         margin-bottom: 50px;
+        max-height: 45px;
+        overflow: hidden;
     }
 
     &__text {
@@ -40,16 +42,25 @@
         font-size: 16px;
         color: $first-color;
         line-height: 2;
-        margin-bottom: 100px;
+        margin-bottom: 70px;
+        max-height: 130px;
+        overflow: hidden;
     }
 
     &__list {
         display: flex;
         justify-content: space-around;
+        padding-top: 30px;
+        border-top: 2px solid #cecece;
     }
 
     &__item {
         position: relative;
+
+        &:not(:last-child) {
+            padding-right: 20px;
+            border-right: 1px solid #cecece;
+        }
 
         &-project {
             &:before {

@@ -6,7 +6,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 30px;
-        margin-bottom: 190px;
+        margin-bottom: 200px;
 
         @media (max-width: 1023px) {
             grid-template-columns: repeat(3, 1fr);
@@ -31,7 +31,7 @@
         border-radius: 10px;
         box-shadow: 0 0 50px 15px rgba(37, 37, 37, 0.05);
         max-width: 270px;
-        padding: 0 20px;
+        padding: 0 20px 20px;
 
         @media (max-width: 479px) {
             margin: 0 auto;
@@ -50,7 +50,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 300px;
+        height: 295px;
         position: relative;
 
         @media (max-width: 1023px) {
@@ -66,11 +66,13 @@
     &__title {
         @extend %dmsans-500;
         color: $first-color;
+        white-space: nowrap;
     }
 
     &__price {
         @extend %dmsans-700;
         color: $icon-active-color;
+        white-space: nowrap;
     }
 
     &__list {
