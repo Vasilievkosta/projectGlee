@@ -54,6 +54,10 @@ main {
     display: inline-block;
     position: relative;
     transition: color 0.3s;
+    white-space: nowrap;
+    text-overflow: clip;
+    max-width: 200px;
+    overflow: hidden;
 }
 
 .title {
@@ -63,6 +67,9 @@ main {
     color: $title-color;
     text-align: center;
     margin-bottom: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .mix-nav {
@@ -74,7 +81,7 @@ main {
     margin: 0 auto;
     margin-bottom: 70px;
 
-    @media (max-width: 575px) {
+    @media (max-width: $screen-mobileX) {
         display: block;
         margin: 0 auto 50px;
         text-align: center;
@@ -84,8 +91,9 @@ main {
         &:not(:last-child) {
             margin-right: 30px;
 
-            @media (max-width: 575px) {
+            @media (max-width: $screen-mobileX) {
                 margin-right: 0;
+                padding-bottom: 20px;
             }
         }
     }

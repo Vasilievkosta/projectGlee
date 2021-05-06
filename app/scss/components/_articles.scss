@@ -1,7 +1,7 @@
 .articles {
     padding-top: 115px;
 
-    @media (max-width: 1200px) {
+    @media (max-width: $screen-laptopL) {
         padding-top: 55px;
     }
 
@@ -10,7 +10,7 @@
 
         position: relative;
 
-        @media (max-width: 1200px) {
+        @media (max-width: $screen-laptopL) {
             text-align: center;
         }
     }
@@ -28,13 +28,16 @@
         top: 22px;
         border-bottom: 1px solid transparent;
         transition: border 0.3s;
+        overflow: hidden;
+        white-space: nowrap;
+
 
         &:hover {
             border-color: $default-color;
         }
 
-        @media (max-width: 768px) {
-            top: -20px;
+        @media (max-width: $screen-tablet) {
+            top: -30px;
         }
 
         &::after {
@@ -48,8 +51,7 @@
         margin-bottom: -185px;
         flex-wrap: wrap;
 
-        @media (max-width: 1200px) {
-            // display: block;
+        @media (max-width: $screen-laptopL) {
             margin-bottom: 50px;
         }
     }
@@ -57,7 +59,7 @@
     &__item {
         max-width: 370px;
 
-        @media (max-width: 1200px) {
+        @media (max-width: $screen-laptopL) {
             margin: 0 auto;
         }
     }
@@ -66,14 +68,14 @@
 .news-card {
     border-radius: 6px;
     position: relative;
-    background-color: #fff;
+    background-color: $bg-color;
     transition: transform 0.3s;
 
     &:hover {
         transform: translateY(-1%);
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: $screen-laptopL) {
         background-color: #f8f8f8;
     }
 
@@ -83,8 +85,8 @@
     }
 
     &__news {
-        background-color: #a3bbc8;
-        color: #fff;
+        background-color: $icon-active-color;
+        color: $bg-color;
         padding: 5px 30px;
         @extend %poppins-700;
         font-size: 14px;
@@ -95,7 +97,7 @@
         left: 30px;
         transform: translateY(-50%);
 
-        @media (max-width: 575px) {
+        @media (max-width: $screen-mobileX) {
             top: 0;
             left: 0;
         }
@@ -108,7 +110,8 @@
         padding: 30px 0 15px;
         border-bottom: 1px solid #e0e0e0;
         margin: 0 30px;
-        min-height: 110px;
+        height: 110px;
+        overflow: hidden;
     }
 
     &__data {
@@ -118,8 +121,9 @@
         color: $data-color;
         text-transform: uppercase;
         margin: 15px 30px;
-        //не понятные маржины
         padding-bottom: 15px;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
     &__time {
@@ -131,15 +135,16 @@
     background-color: #fef7f0;
     padding: 265px 0 80px;
 
-    @media (max-width: 1200px) {
+    @media (max-width: $screen-laptopL) {
         padding: 20px;
     }
 
-    @media (max-width: 575px) {
+    @media (max-width: $screen-mobileX) {
         padding: 10px 0;
     }
 
     &__img {
         margin: 0 auto;
+        max-height: 84px;
     }
 }

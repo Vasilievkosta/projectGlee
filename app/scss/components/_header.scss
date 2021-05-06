@@ -13,12 +13,11 @@
 }
 
 .menu {
-    @media (max-width: 1023px) {
+    @media (max-width: $screen-laptop) {
         order: 1;
-        margin-left: 20px;
     }
 
-    @media (max-width: 575px) {
+    @media (max-width: $screen-mobileX) {
         order: 0;
     }
 
@@ -29,7 +28,7 @@
             transition: transform 0.25s;
         }
 
-        @media (max-width: 1023px) {
+        @media (max-width: $screen-laptop) {
             display: block;
             background-color: transparent;
             border: none;
@@ -40,20 +39,20 @@
 
         &--active {
             & path:nth-of-type(1) {
-                @media (max-width: 1023px) {
+                @media (max-width: $screen-laptop) {
                     transform: rotate(45deg);
                     transform-origin: -1px 3px;
                 }
             }
 
             & path:nth-of-type(2) {
-                @media (max-width: 1023px) {
+                @media (max-width: $screen-laptop) {
                     display: none;
                 }
             }
 
             & path:nth-of-type(3) {
-                @media (max-width: 1023px) {
+                @media (max-width: $screen-laptop) {
                     transform: rotate(-45deg);
                     transform-origin: 0px 13px;
                 }
@@ -70,7 +69,7 @@
         color: $default-color;
         display: flex;
 
-        @media (max-width: 1023px) {
+        @media (max-width: $screen-laptop) {
 
             display: block;
             /* flex-direction: column; */
@@ -86,12 +85,12 @@
             z-index: 5;
         }
 
-        @media (max-width: 575px) {
+        @media (max-width: $screen-mobileX) {
             top: 200px;
         }
 
         &.menu__list--active {
-            @media (max-width: 1023px) {
+            @media (max-width: $screen-laptop) {
                 transform: translateY(0%);
                 transition: all 0.5s;
             }
@@ -101,7 +100,7 @@
     &__item:not(:last-child) {
         margin-right: 40px;
 
-        @media (max-width: 1023px) {
+        @media (max-width: $screen-laptop) {
             margin-right: 0;
         }
     }
@@ -110,9 +109,9 @@
         border-bottom: 1px solid transparent;
         transition: border-bottom 0.3s;
 
-        @media (max-width: 1023px) {
+        @media (max-width: $screen-laptop) {
             display: block;
-            margin: 20px 0;
+            padding: 20px 0;
         }
 
         &:focus {
@@ -135,11 +134,11 @@
 .user-panel {
     display: flex;
 
-    @media (max-width: 1023px) {
-        margin-left: auto;
+    @media (max-width: $screen-laptop) {
+        // margin-left: auto;
     }
 
-    @media (max-width: 575px) {
+    @media (max-width: $screen-mobileX) {
         width: 100%;
         margin-top: 40px;
         justify-content: center;

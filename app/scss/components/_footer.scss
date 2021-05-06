@@ -15,15 +15,11 @@
         display: flex;
         justify-content: space-between;
 
-        @media (max-width: 1200px) {
+        @media (max-width: $screen-laptopL) {
             flex-wrap: wrap;
             justify-content: center;
             padding: 40px 0;
         }
-
-        // @media (max-width: 360px) {
-        //     display: block;
-        // }
     }
 
     &__items {
@@ -32,18 +28,14 @@
             width: 235px;
             margin-right: 100px;
 
-            @media (max-width: 1200px) {
+            @media (max-width: $screen-laptopL) {
                 margin-right: 30px;
             }
-
-            // @media (max-width: 360px) {
-            //     margin: 0 auto;
-            // }
         }
 
         &:nth-child(2),
         &:nth-child(3) {
-            @media (max-width: 1200px) {
+            @media (max-width: $screen-laptopL) {
                 width: 100px;
             }
         }
@@ -112,6 +104,10 @@
         color: #fff;
         cursor: pointer;
         transition: color 0.3s;
+        white-space: nowrap;
+        text-overflow: clip;
+        max-width: 200px;
+        overflow: hidden;
 
         &:focus {
             outline: 0;

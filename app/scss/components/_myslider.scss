@@ -12,7 +12,7 @@
                 line-height: 0.8;
                 @extend %rubik-500;
                 color: $first-color;
-                background-color: #fff;
+                background-color: $bg-color;
                 opacity: 0.3;
                 width: 30px;
                 height: 30px;
@@ -33,7 +33,7 @@
                 }
 
                 &:active {
-                    background-color: #fff;
+                    background-color: $bg-color;
                 }
             }
         }
@@ -50,19 +50,17 @@
         padding: 215px 0 200px;
         position: relative;
 
-        @media (max-width: 1200px) {
+        @media (max-width: $screen-laptopL) {
             padding: 120px 0;
         }
 
-        @media (max-width: 1023px) {
+        @media (max-width: $screen-laptop) {
             padding: 50px 0;
             justify-content: center;
         }
 
-        & .myslider__img {
-            @media (max-width: 768px) {
-                display: none;
-            }
+        @media (max-width: $screen-tablet) {
+            display: block;
         }
 
         &::before {
@@ -85,13 +83,13 @@
                 background-image: linear-gradient(90.0deg, #ffffff 0%, rgba(255, 255, 255, 0.0) 100%);
             }
 
-            @media (max-width: 1200px) {
+            @media (max-width: $screen-laptopL) {
                 width: calc(0.75*610px);
                 height: calc(0.75*634px);
                 top: 45px;
             }
 
-            @media (max-width: 1023px) {
+            @media (max-width: $screen-laptop) {
                 display: none;
             }
         }
@@ -99,6 +97,11 @@
 
     &__content {
         max-height: 350px;
+
+        @media (max-width: $screen-tablet) {
+            max-width: 100%;
+            text-align: center;
+        }
     }
 
     &__title {
@@ -112,8 +115,16 @@
         max-height: 140px;
         overflow: hidden;
 
-        @media (max-width: 1200px) {
+        @media (max-width: $screen-laptopL) {
             font-size: 60px;
+        }
+
+        @media (max-width: $screen-tablet) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 24px;
         }
     }
 
@@ -126,6 +137,15 @@
         color: $default-color;
         max-height: 70px;
         overflow: hidden;
+
+        @media (max-width: $screen-tablet) {
+            max-width: 100%;
+            text-align: center;
+        }
+
+        @media (max-width: $screen-mobileX) {
+            max-height: 90px;
+        }
     }
 
     &__link {
@@ -135,8 +155,8 @@
         padding: 25px 95px 23px 30px;
         border: 1px solid transparent;
 
-        @media (max-width: 575px) {
-            margin: 0 auto;
+        @media (max-width: $screen-tablet) {
+            margin-bottom: 20px;
         }
 
         &:hover {
@@ -156,12 +176,20 @@
         max-height: 265px;
         margin-top: auto;
 
-        @media (max-width: 1200px) {
+        @media (max-width: $screen-laptopL) {
             max-height: 240px;
         }
 
-        @media (max-width: 1023px) {
+        @media (max-width: $screen-laptop) {
             max-height: 150px;
+        }
+
+        @media (max-width: $screen-tablet) {
+            margin: 0 auto;
+        }
+
+        @media (max-width: 575px) {
+            max-height: 120px;
         }
     }
 

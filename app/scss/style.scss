@@ -4,21 +4,21 @@
 @import 'global';
 @import 'libs';
 
-@import '../components/header';
-@import '../components/myslider';
-@import '../components/advantage';
-@import '../components/product';
-@import '../components/lamp';
-@import '../components/design';
-@import '../components/video';
-@import '../components/articles';
-@import '../components/footer';
+@import './components/header';
+@import './components/myslider';
+@import './components/advantage';
+@import './components/product';
+@import './components/lamp';
+@import './components/design';
+@import './components/video';
+@import './components/articles';
+@import './components/footer';
 
 //styles for About page
 
-@import '../components/about_scss/team';
-@import '../components/about_scss/mission';
-@import '../components/about_scss/service';
+@import './components/about_scss/team';
+@import './components/about_scss/mission';
+@import './components/about_scss/service';
 
 .page {
     &__title {

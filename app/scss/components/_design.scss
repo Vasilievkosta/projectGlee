@@ -1,22 +1,21 @@
 .design {
     padding: 100px 0 120px;
 
-    @media (max-width: 1200px) {
+    @media (max-width: $screen-laptopL) {
         padding: 30px 0;
     }
 
     &__list {
-        // min-height: 530px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 30px;
 
-        @media (max-width: 1200px) {
+        @media (max-width: $screen-laptop) {
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: $screen-mobileX) {
             grid-template-columns: repeat(1, 1fr);
         }
     }
@@ -33,6 +32,11 @@
     background-color: #f8f8f8;
     border-radius: 5px 5px 0 0;
 
+    @media (max-width: $screen-mobileX) {
+        max-width: 430px;
+        margin: 0 auto;
+    }
+
     &__title {
         @extend %dmsans-700;
         font-size: 20px;
@@ -43,6 +47,20 @@
         position: absolute;
         top: 0;
         z-index: 1;
+        overflow: hidden;
+        max-height: 50px;
+
+        @media (max-width: $screen-laptopL) {
+            margin: 10px;
+        }
+
+        @media (max-width: $screen-mobileX) {
+            margin: 35px;
+        }
+
+        @media (max-width: $screen-mobileL) {
+            margin: 10px;
+        }
     }
 
     &__text {
@@ -54,6 +72,6 @@
     }
 
     &__img {
-        margin: 0 auto;
+        margin-left: auto;
     }
 }

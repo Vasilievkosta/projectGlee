@@ -2,32 +2,54 @@
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 768px) {
+    @media (max-width: $screen-laptopX) {
+        justify-content: space-around;
+    }
+
+    @media (max-width: $screen-tablet) {
         display: block;
     }
 
     &__item {
         background-color: #feefe2;
         display: flex;
-        padding: 90px 145px 55px;
+        padding: 90px 145px 80px;
 
-        @media (max-width: 1800px) {
-            padding: 50px;
+        @media (max-width: $screen-laptopX) {
+            padding: 10px;
             margin: 20px;
             align-items: center;
+            gap: 20px;
+        }
+
+        @media (max-width: $screen-tablet) {
+            margin: 10px;
+        }
+
+        @media (max-width: $screen-mobileL) {
+            display: block;
+            text-align: center;
         }
     }
 
     &__wrap {
         margin: -185px 20px 0 0;
 
-        @media (max-width: 1440px) {
-            margin-top: 0;
+        @media (max-width: $screen-laptopX) {
+            margin: 0;
         }
     }
 
     &__img {
         max-height: 405px;
+
+        @media (max-width: $screen-laptopX) {
+            margin: 0 auto;
+        }
+
+        @media (max-width: $screen-mobileL) {
+            margin-bottom: 20px;
+        }
     }
 
     &__content {
@@ -38,13 +60,19 @@
         @extend %dmsans-700;
         font-size: 26px;
         line-height: 1.3;
+        max-height: 66px;
+        overflow: hidden;
+        // -webkit-line-clamp: 2;
+
     }
 
     &__text {
         @extend %rubik-400;
         font-size: 16px;
         line-height: 2;
-        margin: 25px 0;
+        margin: 15px 0;
+        max-height: 66px;
+        overflow: hidden;
     }
 
     &__link {
@@ -58,12 +86,13 @@
         border-radius: 5px;
         transition: background-color 0.3s;
 
+
         &:hover {
-            color: #fff;
-            background-color: #a3bbc8;
+            color: $bg-color;
+            background-color: $icon-active-color;
 
             & .lamp__svg {
-                fill: #fff;
+                fill: $bg-color;
             }
         }
 
