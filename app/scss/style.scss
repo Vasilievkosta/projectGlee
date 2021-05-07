@@ -16,9 +16,10 @@
 
 //styles for About page
 
-@import './components/about_scss/team';
+
 @import './components/about_scss/mission';
 @import './components/about_scss/service';
+@import './components/about_scss/team';
 
 .page {
     &__title {
@@ -27,7 +28,8 @@
         @extend %rubik-300;
         font-size: 36px;
         line-height: 1.4;
-        padding: 30px;
+        padding: 20px 0 30px;
+        margin-bottom: 0;
     }
 
     &__text {

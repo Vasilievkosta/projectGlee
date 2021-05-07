@@ -10,6 +10,13 @@
     &__item {
         padding: 80px 45px;
         text-align: center;
+        overflow: hidden;
+        max-width: 170px;
+        white-space: nowrap;
+
+        @media (max-width: $screen-laptopX) {
+            padding: 40px 20px;
+        }
     }
 
     &__img {

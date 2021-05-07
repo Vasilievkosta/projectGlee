@@ -1,31 +1,51 @@
 .team {
-    padding: 120px 0 70px 0;
+    padding-top: 120px;
 
     &__wrap {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: $screen-laptop) {
+            display: block;
+        }
     }
 
     &__content {
         max-width: 310px;
+
+        @media (max-width: $screen-laptop) {
+            max-width: 100%;
+        }
+    }
+
+    &__title {
+        text-align: left;
     }
 
     &__text {
         font-size: 16px;
         color: #243f4d;
-        line-height: 2;
-        margin-bottom: 50px;
+        line-height: 1.9;
+        margin-bottom: 35px;
+
+        @media (max-width: $screen-laptop) {
+            margin-bottom: 20px;
+        }
     }
 
     &__btn {
         font-size: 14px;
         background-color: #a3bbc8;
         color: #fff;
-        padding: 23px 90px 23px 20px;
+        padding: 20px 70px 20px 15px;
         border-radius: 5px;
-        -webkit-transition: background-color 0.3s;
-        -o-transition: background-color 0.3s;
         transition: background-color 0.3s;
+
+        @media (max-width: $screen-laptop) {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 20px;
+        }
     }
 
     &__btn:hover {
@@ -51,6 +71,11 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 30px;
+
+        @media (max-width: $screen-mobileX) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
     }
 
     &__img {
@@ -60,6 +85,10 @@
     &__foto {
         position: relative;
         max-height: 320px;
+
+        @media (max-width: $screen-laptop) {
+            margin: 0 auto;
+        }
     }
 
     &__label {
@@ -72,11 +101,17 @@
         width: 100%;
         position: absolute;
         transform: translateY(-50px);
+
+        @media (max-width: $screen-tablet) {
+            padding: 15px;
+            max-width: 265px;
+        }
     }
 
     &__name {
         @extend %dmsans-700;
         font-size: 22px;
+        margin-bottom: 5px;
         color: #5c7885;
     }
 
