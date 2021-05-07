@@ -67,3 +67,23 @@ burger.addEventListener('click', function () {
     burger.classList.toggle('menu__btn--active');
     menu.classList.toggle('menu__list--active');
 });
+
+//fixed header
+
+const one = document.querySelector('.myslider');
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+
+    let scrollTop = window.scrollY;
+    let onePart = one.offsetHeight;
+
+    if (scrollTop >= onePart) {
+
+        header.classList.add('header__fixed');
+        one.style.marginTop = header.offsetHeight + 'px';
+    } else {
+        header.classList.remove('header__fixed');
+        one.style.marginTop = '0px';
+    }
+});
