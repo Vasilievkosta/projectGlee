@@ -39,6 +39,7 @@
         padding: 40px 50px 40px 100px;
         background-repeat: no-repeat;
         background-position: 10% 50%;
+        max-width: 500px;
     }
 
     &__title {
@@ -46,10 +47,7 @@
         color: #414141;
         position: relative;
         margin-bottom: 5px;
-        max-width: 200px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: clip;
+        @include clamp;
     }
 
     &__text {
@@ -58,9 +56,6 @@
         line-height: 1.8;
         color: #585858;
         max-width: 215px;
-        max-height: 60px;
-        overflow: hidden;
-
-
+        @include clamp(2);
     }
 }

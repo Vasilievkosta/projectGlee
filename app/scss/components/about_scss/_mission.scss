@@ -21,6 +21,8 @@
 
     &__img {
         margin-right: 45px;
+        max-width: 570px;
+        object-fit: contain;
 
         @media (max-width: $screen-laptopL) {
             margin-right: 0;
@@ -33,7 +35,7 @@
         margin-bottom: 40px;
         @extend %rubik-400;
         font-size: 16px;
-        color: #243f4d;
+        color: $first-color;
         line-height: 2;
         overflow: hidden;
         white-space: normal;
@@ -46,7 +48,7 @@
             position: absolute;
             @extend %rubik-700;
             font-size: 140px;
-            color: #a3bbc8;
+            color: $mission-before-color;
             top: 0;
             left: 0;
         }
@@ -76,7 +78,7 @@
         display: flex;
         justify-content: space-around;
         padding-top: 20px;
-        border-top: 2px solid #cecece;
+        border-top: 2px solid $mission-border-color;
 
         @media (max-width: $screen-laptopL) {
             justify-content: space-evenly;
@@ -92,7 +94,7 @@
 
         &:not(:last-child) {
             padding-right: 20px;
-            border-right: 1px solid #cecece;
+            border-right: 1px solid $mission-border-color;
 
             @media (max-width: $screen-laptopL) {
                 border-right: none;
@@ -139,12 +141,12 @@
         @extend %dmsans-700;
         font-size: 36px;
         line-height: 1;
-        color: #243f4d;
+        color: $first-color;
     }
 
     &__name {
         @extend %dmsans-700;
         font-size: 16px;
-        color: #4c4c4c;
+        color: $mission-name-color;
     }
 }

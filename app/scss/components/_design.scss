@@ -29,7 +29,7 @@
 
 .design-card {
     position: relative;
-    background-color: #f8f8f8;
+    background-color: $desing-color;
     border-radius: 5px 5px 0 0;
 
     @media (max-width: $screen-mobileX) {
@@ -41,14 +41,14 @@
         @extend %dmsans-700;
         font-size: 20px;
         line-height: 1.2;
-        color: #000;
+        color: $black-color;
         max-width: 175px;
         margin: 35px;
         position: absolute;
         top: 0;
         z-index: 1;
-        overflow: hidden;
-        max-height: 50px;
+        max-height: 80px;
+        @include clamp(3);
 
         @media (max-width: $screen-laptopL) {
             margin: 10px;
@@ -73,5 +73,6 @@
 
     &__img {
         margin-left: auto;
+        object-fit: contain;
     }
 }

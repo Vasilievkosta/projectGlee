@@ -70,20 +70,20 @@ burger.addEventListener('click', function () {
 
 //fixed header
 
-const one = document.querySelector('.myslider');
 const header = document.querySelector('.header');
+const headerWrap = document.querySelector('.header__wrap');
 
 window.addEventListener('scroll', () => {
 
     let scrollTop = window.scrollY;
-    let onePart = one.offsetHeight;
+    let heightPart = headerWrap.offsetHeight;
 
-    if (scrollTop >= onePart) {
+    if (scrollTop > heightPart) {
 
-        header.classList.add('header__fixed');
-        one.style.marginTop = header.offsetHeight + 'px';
+        headerWrap.classList.add('header__fixed');
+        header.style.marginTop = heightPart + 'px';
     } else {
-        header.classList.remove('header__fixed');
-        one.style.marginTop = '0px';
+        headerWrap.classList.remove('header__fixed');
+        header.style.marginTop = '0px';
     }
 });

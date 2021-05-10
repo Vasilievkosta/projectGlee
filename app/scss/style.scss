@@ -22,19 +22,22 @@
 @import './components/about_scss/team';
 
 .page {
+    background-color: $icon-color;
+    padding: 20px 0 30px;
+    text-align: center;
+
     &__title {
-        background-color: $icon-color;
-        color: #222933;
+        color: $data-color;
         @extend %rubik-300;
         font-size: 36px;
         line-height: 1.4;
-        padding: 20px 0 30px;
         margin-bottom: 0;
     }
 
     &__text {
         @extend %rubik-400;
         font-size: 14px;
-        color: #7b8188;
+        color: $page-text-color;
+        @include clamp;
     }
 }

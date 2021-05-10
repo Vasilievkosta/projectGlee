@@ -24,7 +24,7 @@
 
     &__text {
         font-size: 16px;
-        color: #243f4d;
+        color: $first-color;
         line-height: 1.9;
         margin-bottom: 35px;
 
@@ -35,8 +35,8 @@
 
     &__btn {
         font-size: 14px;
-        background-color: #a3bbc8;
-        color: #fff;
+        background-color: $mission-before-color;
+        color: $bg-color;
         padding: 20px 70px 20px 15px;
         border-radius: 5px;
         transition: background-color 0.3s;
@@ -49,16 +49,16 @@
     }
 
     &__btn:hover {
-        color: #fff;
-        background-color: #436372;
+        color: $bg-color;
+        background-color: $default-color;
     }
 
     &__btn:active {
-        background-color: #a3bbc8;
-        color: #436372;
+        background-color: $mission-before-color;
+        color: $default-color;
 
         & .team__svg {
-            fill: #436372;
+            fill: $default-color;
         }
     }
 
@@ -80,6 +80,7 @@
 
     &__img {
         margin-bottom: 70px;
+        object-fit: contain;
     }
 
     &__foto {
@@ -94,7 +95,7 @@
     &__label {
         display: flex;
         justify-content: space-between;
-        background-color: #fff;
+        background-color: $bg-color;
         box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.45);
         padding: 25px;
         max-width: 325px;
@@ -112,13 +113,13 @@
         @extend %dmsans-700;
         font-size: 22px;
         margin-bottom: 5px;
-        color: #5c7885;
+        color: $team-name-color;
     }
 
     &__prof {
         @extend %rubik-400;
         font-size: 16px;
-        color: #565872;
+        color: $team-prof-color;
     }
 
     &__links {
@@ -132,21 +133,21 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background-color: #f6f6f6;
+        background-color: $team-link-color;
         transition: background-color 0.3s;
         position: relative;
         display: inline-block;
 
         &:hover {
-            background-color: #a3bbc8;
+            background-color: $mission-before-color;
 
             & .svg {
-                fill: #edf1f4;
+                fill: $icon-color;
             }
         }
 
         &:active {
-            background-color: #436372;
+            background-color: $default-color;
         }
     }
 }

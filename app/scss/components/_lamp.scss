@@ -11,7 +11,7 @@
     }
 
     &__item {
-        background-color: #feefe2;
+        background-color: $bg-lamp-color;
         display: flex;
         padding: 90px 145px 80px;
 
@@ -42,6 +42,7 @@
 
     &__img {
         max-height: 405px;
+        object-fit: contain;
 
         @media (max-width: $screen-laptopX) {
             margin: 0 auto;
@@ -60,10 +61,7 @@
         @extend %dmsans-700;
         font-size: 26px;
         line-height: 1.3;
-        max-height: 66px;
-        overflow: hidden;
-        // -webkit-line-clamp: 2;
-
+        @include clamp(2);
     }
 
     &__text {
@@ -71,8 +69,7 @@
         font-size: 16px;
         line-height: 2;
         margin: 15px 0;
-        max-height: 66px;
-        overflow: hidden;
+        @include clamp(2);
     }
 
     &__link {
@@ -80,12 +77,11 @@
         @extend %rubik-500;
         font-size: 14px;
         background-color: transparent;
-        border: 1px solid #b3b7b5;
+        border: 1px solid $link-lamp-color;
         color: #436372;
         padding: 23px 90px 23px 20px;
         border-radius: 5px;
         transition: background-color 0.3s;
-
 
         &:hover {
             color: $bg-color;
