@@ -27,11 +27,12 @@
     text-align: center;
 
     &__title {
-        color: $data-color;
         @extend %rubik-300;
         font-size: 36px;
         line-height: 1.4;
-        margin-bottom: 0;
+        color: $data-color;
+        text-align: center;
+        @include clamp;
     }
 
     &__text {
@@ -40,4 +41,10 @@
         color: $page-text-color;
         @include clamp;
     }
+}
+
+//styles for Product page
+
+.product__partners {
+    padding: 80px 0;
 }
