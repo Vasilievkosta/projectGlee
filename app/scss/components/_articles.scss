@@ -71,6 +71,11 @@
             margin-bottom: 20px;
         }
     }
+
+    &__bg {
+        background-color: $partners-color;
+        height: 165px;
+    }
 }
 
 .news-card {
@@ -138,23 +143,5 @@
 
     &__time {
         margin-right: 45px;
-    }
-}
-
-.partners {
-    background-color: $partners-color;
-    padding: 265px 0 80px;
-
-    @media (max-width: $screen-laptopL) {
-        padding: 20px;
-    }
-
-    @media (max-width: $screen-mobileX) {
-        padding: 10px 0;
-    }
-
-    &__img {
-        margin: 0 auto;
-        max-height: 84px;
     }
 }
