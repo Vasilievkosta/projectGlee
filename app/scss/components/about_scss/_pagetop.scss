@@ -1,0 +1,21 @@
+.page-top {
+    background-color: $icon-color;
+    padding: 20px 0 30px;
+    text-align: center;
+
+    &__title {
+        @extend %rubik-300;
+        font-size: 36px;
+        line-height: 1.4;
+        color: $data-color;
+        text-align: center;
+        @include clamp;
+    }
+
+    &__text {
+        @extend %rubik-400;
+        font-size: 14px;
+        color: $page-text-color;
+        @include clamp;
+    }
+}

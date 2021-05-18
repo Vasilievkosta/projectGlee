@@ -1,23 +1,53 @@
-<section class="products">
+<section class="catalog">
     <div class="container">
-        <h2 class="title">
-            products
-        </h2>
 
         <a class="product-card__link" href="#">
             <svg class="svg product-card__svg" width="15" height="15">
                 <use xlink:href="images/stack/sprite.svg#icon--grid"></use>
             </svg>
 
-            <span class="sr-only">search icon</span>
+            <span class="sr-only">open grid</span>
         </a>
         <a class="product-card__link" href="#">
             <svg class="svg product-card__svg" width="20" height="15">
                 <use xlink:href="images/stack/sprite.svg#icon--list"></use>
             </svg>
 
-            <span class="sr-only">search icon</span>
+            <span class="sr-only">open list</span>
         </a>
+
+        <div class="catalog__inner">
+            <div class="catalog__filter">
+                <div class="catalog__category">
+                    <h3 class="catalog__title">Category</h3>
+
+                </div>
+                <div class="catalog__price">
+                    <h3 class="catalog__title">Price</h3>
+
+                    <label class="catalog__label">
+                        <input class="catalog__input" name="text" type="text" data-min="0" data-max="1000"
+                            data-from="100" data-to="500">
+                    </label>
+                    <div class="catalog__text">
+                        <p><span>$</span><span class="catalog__text-from"></span><span>.00</span></p>
+                        <p><span>$</span><span class="catalog__text-to"></span><span>.00</span></p>
+                    </div>
+
+
+                </div>
+                <div class="catalog__brand">
+                    <h3 class="catalog__title">Brand</h3>
+                </div>
+                <div class="catalog__recent">
+                    <h3 class="catalog__title">Recent</h3>
+                </div>
+            </div>
+            <div class="catalog__content">
+                <img src="../../../images/about-img1.png" alt="">
+            </div>
+        </div>
+
 
     </div>
 </section>

@@ -1,5 +1,17 @@
 $(function () {
 
+    $('.catalog__input').ionRangeSlider({
+        type: "double",
+        onStart: function (data) {
+            $('.catalog__text-from').text(data.from);
+            $('.catalog__text-to').text(data.to);
+        },
+        onChange: function (data) {
+            $('.catalog__text-from').text(data.from);
+            $('.catalog__text-to').text(data.to);
+        },
+    })
+
     $('.myslider__inner').slick({
         dots: true,
         arrows: false

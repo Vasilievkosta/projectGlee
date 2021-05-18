@@ -1,48 +1,30 @@
-@import 'vars';
 @import 'fonts';
+@import 'vars';
 @import 'reset';
-@import 'global';
 @import 'libs';
+@import 'global';
 
-@import './components/header';
-@import './components/myslider';
-@import './components/advantage';
-@import './components/product';
-@import './components/lamp';
-@import './components/design';
-@import './components/video';
-@import './components/articles';
-@import './components/partners';
-@import './components/footer';
+@import 'components/header';
+@import 'components/myslider';
+@import 'components/advantage';
+@import 'components/product';
+@import 'components/lamp';
+@import 'components/design';
+@import 'components/video';
+@import 'components/articles';
+@import 'components/partners';
+@import 'components/footer';
 
 //styles for About page
 
-@import './components/about_scss/mission';
-@import './components/about_scss/service';
-@import './components/about_scss/team';
+@import 'components/about_scss/pagetop';
+@import 'components/about_scss/mission';
+@import 'components/about_scss/service';
+@import 'components/about_scss/team';
 
-.page {
-    background-color: $icon-color;
-    padding: 20px 0 30px;
-    text-align: center;
 
-    &__title {
-        @extend %rubik-300;
-        font-size: 36px;
-        line-height: 1.4;
-        color: $data-color;
-        text-align: center;
-        @include clamp;
-    }
 
-    &__text {
-        @extend %rubik-400;
-        font-size: 14px;
-        color: $page-text-color;
-        @include clamp;
-    }
-}
 
 //styles for Product page
 
-@import './components/product_scss/catalog';
+@import 'components/product_scss/catalog';
