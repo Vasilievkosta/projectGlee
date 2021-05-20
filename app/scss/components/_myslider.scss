@@ -1,6 +1,6 @@
 .myslider {
     &__inner {
-        background-color: $fone-color;
+        background-color: $beige-300;
 
         & .slick-dots {
             display: flex;
@@ -11,8 +11,8 @@
                 font-size: 11px;
                 line-height: 0.8;
                 @extend %rubik-500;
-                color: $first-color;
-                background-color: $bg-color;
+                color: $black-300;
+                background-color: $white;
                 opacity: 0.3;
                 width: 30px;
                 height: 30px;
@@ -23,17 +23,17 @@
                 transition: background-color 0.3s, opacity 0.2s;
 
                 &:focus {
-                    border: 2px solid $icon-active-color;
+                    border: 2px solid $blue-100;
                     outline: 0;
                 }
 
                 &:hover {
-                    background-color: $icon-active-color;
+                    background-color: $blue-100;
                     opacity: 1;
                 }
 
                 &:active {
-                    background-color: $bg-color;
+                    background-color: $white;
                 }
             }
         }
@@ -50,16 +50,16 @@
         padding: 215px 0 200px;
         position: relative;
 
-        @media (max-width: $screen-laptopL) {
+        @media (max-width: $XL) {
             padding: 120px 0;
         }
 
-        @media (max-width: $screen-laptop) {
+        @media (max-width: $L) {
             padding: 50px 0;
             justify-content: center;
         }
 
-        @media (max-width: $screen-tablet) {
+        @media (max-width: $M) {
             display: block;
         }
 
@@ -77,18 +77,18 @@
             left: 57%;
             z-index: -5;
 
-            @media (max-width: 1440px) {
+            @media (max-width: $XXL) {
                 left: 38%;
                 background-image: linear-gradient(90.0deg, #ffffff 0%, rgba(255, 255, 255, 0.0) 100%);
             }
 
-            @media (max-width: $screen-laptopL) {
+            @media (max-width: $XL) {
                 width: calc(0.75*610px);
                 height: calc(0.75*634px);
                 top: 45px;
             }
 
-            @media (max-width: $screen-laptop) {
+            @media (max-width: $L) {
                 display: none;
             }
         }
@@ -97,7 +97,7 @@
     &__content {
         max-height: 350px;
 
-        @media (max-width: $screen-tablet) {
+        @media (max-width: $M) {
             max-width: 100%;
             text-align: center;
         }
@@ -108,20 +108,20 @@
         max-width: 415px;
         font-size: 72px;
         line-height: 1;
-        color: $first-color;
+        color: $black-300;
         text-transform: uppercase;
         margin-bottom: 25px;
         @include clamp(2);
 
-        @media (max-width: $screen-laptopL) {
+        @media (max-width: $XL) {
             font-size: 60px;
         }
 
-        @media (max-width: $screen-tablet) {
+        @media (max-width: $M) {
             font-size: 40px;
         }
 
-        @media (max-width: 575px) {
+        @media (max-width: $S) {
             font-size: 24px;
         }
     }
@@ -132,40 +132,40 @@
         margin-bottom: 35px;
         font-size: 18px;
         line-height: 1.7;
-        color: $default-color;
+        color: $blue-400;
         @include clamp(2);
 
-        @media (max-width: $screen-tablet) {
+        @media (max-width: $M) {
             max-width: 100%;
             text-align: center;
         }
 
-        @media (max-width: $screen-mobileX) {
+        @media (max-width: $S) {
             max-height: 90px;
         }
     }
 
     &__link {
         @extend %rubik-500;
-        background-color: $icon-active-color;
-        color: $bg-color;
+        background-color: $blue-100;
+        color: $white;
         padding: 25px 95px 23px 30px;
         border: 1px solid transparent;
 
-        @media (max-width: $screen-tablet) {
+        @media (max-width: $M) {
             margin-bottom: 20px;
         }
 
         &:hover {
-            color: $first-color;
+            color: $black-300;
 
             & .myslider__svg {
-                fill: $first-color;
+                fill: $black-300;
             }
         }
 
         &:active {
-            background-color: $default-color;
+            background-color: $blue-400;
         }
     }
 
@@ -173,19 +173,19 @@
         max-height: 265px;
         margin-top: auto;
 
-        @media (max-width: $screen-laptopL) {
+        @media (max-width: $XL) {
             max-height: 240px;
         }
 
-        @media (max-width: $screen-laptop) {
+        @media (max-width: $L) {
             max-height: 150px;
         }
 
-        @media (max-width: $screen-tablet) {
+        @media (max-width: $M) {
             margin: 0 auto;
         }
 
-        @media (max-width: 575px) {
+        @media (max-width: $S) {
             max-height: 120px;
         }
     }

@@ -1,7 +1,7 @@
 .product {
     padding-top: 70px;
 
-    @media (max-width: $screen-tablet) {
+    @media (max-width: $M) {
         padding-top: 20px;
     }
 
@@ -12,20 +12,20 @@
         grid-gap: 30px;
         margin-bottom: 185px;
 
-        @media (max-width: $screen-laptopX) {
+        @media (max-width: $XXL) {
             margin-bottom: 35px;
         }
 
-        @media (max-width: $screen-laptop) {
+        @media (max-width: $L) {
             grid-template-columns: repeat(3, 1fr);
             margin-bottom: 25px;
         }
 
-        @media (max-width: $screen-tablet) {
+        @media (max-width: $M) {
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @media (max-width: $screen-mobileL) {
+        @media (max-width: $XS) {
             grid-template-columns: repeat(1, 1fr);
         }
     }
@@ -41,7 +41,7 @@
         max-width: 270px;
         padding: 0 20px 20px;
 
-        @media (max-width: $screen-mobileX) {
+        @media (max-width: $S) {
             margin: 0 auto;
         }
 
@@ -61,7 +61,7 @@
         height: 295px;
         position: relative;
 
-        @media (max-width: $screen-laptop) {
+        @media (max-width: $L) {
             height: 250px;
         }
 
@@ -74,13 +74,13 @@
 
     &__title {
         @extend %dmsans-500;
-        color: $first-color;
+        color: $black-300;
         white-space: nowrap;
     }
 
     &__price {
         @extend %dmsans-700;
-        color: $icon-active-color;
+        color: $blue-100;
         white-space: nowrap;
     }
 
@@ -95,14 +95,14 @@
         transform: translate(50%, 500%);
         transition: transform 0.3s;
 
-        @media (max-width: $screen-mobileX) {
+        @media (max-width: $S) {
             transform: translate(50%, 0%);
             top: 80%;
         }
     }
 
     &__svg {
-        fill: $icon-active-color;
+        fill: $blue-100;
     }
 
     &__link,
@@ -111,22 +111,22 @@
         height: 45px;
         border-radius: 50%;
         display: block;
-        background-color: $bg-color;
+        background-color: $white;
         box-shadow: 0 0 50px 10px rgba(37, 37, 37, 0.05);
         transition: background-color 0.3s;
         position: relative;
         outline: 0;
 
         &:hover {
-            background-color: $icon-active-color;
+            background-color: $blue-100;
 
             & .product-card__svg {
-                fill: $icon-color;
+                fill: $grey-300;
             }
         }
 
         &:active {
-            background-color: $classic-color;
+            background-color: $blue-200;
         }
     }
 
@@ -136,7 +136,7 @@
 
         &:focus {
             outline: 0;
-            color: $classic-color;
+            color: $blue-200;
         }
     }
 }

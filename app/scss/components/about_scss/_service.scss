@@ -1,5 +1,5 @@
 .service {
-    background-color: $fone-color;
+    background-color: $beige-300;
 
     &__list {
         display: flex;
@@ -14,7 +14,7 @@
         max-width: 170px;
         white-space: nowrap;
 
-        @media (max-width: $screen-laptopX) {
+        @media (max-width: $XL) {
             padding: 40px 20px;
         }
     }
@@ -30,13 +30,13 @@
     &__title {
         @extend %dmsans-700;
         font-size: 36px;
-        color: $first-color;
+        color: $black-300;
         line-height: 2;
     }
 
     &__text {
         @extend %dmsans-700;
         font-size: 18px;
-        color: $first-color;
+        color: $black-300;
     }
 }

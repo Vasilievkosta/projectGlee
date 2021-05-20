@@ -1,11 +1,11 @@
 .advantage {
-    background-color: #fff7f0;
+    background-color: $beige-50;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
 
-    @media (max-width: $screen-laptop) {
+    @media (max-width: $L) {
         flex-wrap: wrap;
     }
 
@@ -13,11 +13,11 @@
         content: '';
         height: 100%;
         width: 1px;
-        background-color: #cecece;
+        background-color: $grey-500;
         position: absolute;
         left: 33.3%;
 
-        @media (max-width: $screen-laptop) {
+        @media (max-width: $L) {
             display: none;
         }
     }
@@ -26,11 +26,11 @@
         content: '';
         height: 100%;
         width: 1px;
-        background-color: #cecece;
+        background-color: $grey-500;
         position: absolute;
         right: 33.3%;
 
-        @media (max-width: $screen-laptop) {
+        @media (max-width: $L) {
             display: none;
         }
     }
@@ -44,7 +44,7 @@
 
     &__title {
         @extend %dmsans-700;
-        color: #414141;
+        color: $blue-450;
         position: relative;
         margin-bottom: 5px;
         @include clamp;
@@ -54,7 +54,7 @@
         @extend %dmsans-400;
         font-size: 16px;
         line-height: 1.8;
-        color: #585858;
+        color: $blue-550;
         max-width: 215px;
         @include clamp(2);
     }

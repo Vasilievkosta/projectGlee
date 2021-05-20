@@ -1,7 +1,7 @@
 .mission {
     padding: 120px 0;
 
-    @media (max-width: $screen-laptopL) {
+    @media (max-width: $XL) {
         padding: 50px 0;
     }
 
@@ -9,12 +9,12 @@
         display: flex;
         justify-content: space-between;
 
-        @media (max-width: $screen-laptopL) {
+        @media (max-width: $XL) {
             flex-direction: column;
             max-width: 80%;
         }
 
-        @media (max-width: $screen-tablet) {
+        @media (max-width: $M) {
             max-width: 100%;
         }
     }
@@ -24,7 +24,7 @@
         max-width: 570px;
         object-fit: contain;
 
-        @media (max-width: $screen-laptopL) {
+        @media (max-width: $XL) {
             margin-right: 0;
         }
     }
@@ -35,20 +35,20 @@
         margin-bottom: 40px;
         @extend %rubik-400;
         font-size: 16px;
-        color: $first-color;
+        color: $black-300;
         line-height: 2;
         overflow: hidden;
         white-space: normal;
         max-width: 500px;
 
-        @media (max-width: $screen-tablet) {}
+        @media (max-width: $M) {}
 
         &:before {
             content: '12';
             position: absolute;
             @extend %rubik-700;
             font-size: 140px;
-            color: $mission-before-color;
+            color: $blue-100;
             top: 0;
             left: 0;
         }
@@ -63,13 +63,13 @@
     &__text {
         @extend %rubik-400;
         font-size: 16px;
-        color: $first-color;
+        color: $black-300;
         line-height: 2;
         margin-bottom: 70px;
         max-height: 130px;
         overflow: hidden;
 
-        @media (max-width: $screen-laptopL) {
+        @media (max-width: $XL) {
             margin-bottom: 20px;
         }
     }
@@ -78,9 +78,9 @@
         display: flex;
         justify-content: space-around;
         padding-top: 20px;
-        border-top: 2px solid $mission-border-color;
+        border-top: 2px solid $grey-500;
 
-        @media (max-width: $screen-laptopL) {
+        @media (max-width: $XL) {
             justify-content: space-evenly;
             flex-wrap: wrap;
         }
@@ -94,9 +94,9 @@
 
         &:not(:last-child) {
             padding-right: 20px;
-            border-right: 1px solid $mission-border-color;
+            border-right: 1px solid $grey-500;
 
-            @media (max-width: $screen-laptopL) {
+            @media (max-width: $XL) {
                 border-right: none;
             }
         }
@@ -112,7 +112,7 @@
                 right: calc(100% + 10px);
                 transform: translateY(-50%);
 
-                @media (max-width: $screen-mobileX) {
+                @media (max-width: $S) {
                     display: none;
                 }
             }
@@ -141,12 +141,12 @@
         @extend %dmsans-700;
         font-size: 36px;
         line-height: 1;
-        color: $first-color;
+        color: $black-300;
     }
 
     &__name {
         @extend %dmsans-700;
         font-size: 16px;
-        color: $mission-name-color;
+        color: $black-200;
     }
 }

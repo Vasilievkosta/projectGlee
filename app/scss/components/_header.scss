@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     z-index: 10;
-    background-color: #feefe2;
+    background-color: $beige-200;
 }
 
 .nav {
@@ -22,11 +22,11 @@
 }
 
 .menu {
-    @media (max-width: $screen-laptop) {
+    @media (max-width: $L) {
         order: 1;
     }
 
-    @media (max-width: $screen-mobileX) {
+    @media (max-width: $S) {
         order: 0;
     }
 
@@ -37,7 +37,7 @@
             transition: transform 0.25s;
         }
 
-        @media (max-width: $screen-laptop) {
+        @media (max-width: $L) {
             display: block;
             background-color: transparent;
             border: none;
@@ -48,20 +48,20 @@
 
         &--active {
             & path:nth-of-type(1) {
-                @media (max-width: $screen-laptop) {
+                @media (max-width: $L) {
                     transform: rotate(45deg);
                     transform-origin: -1px 3px;
                 }
             }
 
             & path:nth-of-type(2) {
-                @media (max-width: $screen-laptop) {
+                @media (max-width: $L) {
                     display: none;
                 }
             }
 
             & path:nth-of-type(3) {
-                @media (max-width: $screen-laptop) {
+                @media (max-width: $L) {
                     transform: rotate(-45deg);
                     transform-origin: 0px 13px;
                 }
@@ -75,18 +75,17 @@
         @extend %rubik-500;
         font-size: 15px;
         line-height: 1;
-        color: $default-color;
+        color: $blue-400;
         display: flex;
 
-        @media (max-width: $screen-laptop) {
+        @media (max-width: $L) {
 
             display: block;
-            /* flex-direction: column; */
             position: absolute;
             left: 0;
             right: 0;
             top: 110px;
-            background-color: #fcd7b6;
+            background-color: $beige-300;
             opacity: 0.95;
             text-align: center;
             transform: translateY(-250%);
@@ -94,12 +93,12 @@
             z-index: 5;
         }
 
-        @media (max-width: $screen-mobileX) {
+        @media (max-width: $S) {
             top: 200px;
         }
 
         &.menu__list--active {
-            @media (max-width: $screen-laptop) {
+            @media (max-width: $L) {
                 transform: translateY(0%);
                 transition: all 0.5s;
             }
@@ -109,7 +108,7 @@
     &__item:not(:last-child) {
         margin-right: 40px;
 
-        @media (max-width: $screen-laptop) {
+        @media (max-width: $L) {
             margin-right: 0;
         }
     }
@@ -118,24 +117,24 @@
         border-bottom: 1px solid transparent;
         transition: border-bottom 0.3s;
 
-        @media (max-width: $screen-laptop) {
+        @media (max-width: $L) {
             display: block;
             padding: 20px 0;
         }
 
         &:focus {
             outline: 0;
-            color: $classic-color;
+            color: $blue-200;
         }
 
         &:hover {
-            border-color: $first-color;
-            color: $first-color;
+            border-color: $black-300;
+            color: $black-300;
         }
 
         &:active {
-            color: $accent-color;
-            border-color: $accent-color;
+            color: $red;
+            border-color: $red;
         }
     }
 }
@@ -143,11 +142,11 @@
 .user-panel {
     display: flex;
 
-    @media (max-width: $screen-laptop) {
+    @media (max-width: $L) {
         // margin-left: auto;
     }
 
-    @media (max-width: $screen-mobileX) {
+    @media (max-width: $S) {
         width: 100%;
         margin-top: 40px;
         justify-content: center;
@@ -160,46 +159,46 @@
         border-radius: 50%;
         border: 0;
         cursor: pointer;
-        background-color: $icon-color;
+        background-color: $grey-300;
         transition: background-color 0.3s;
         position: relative;
 
         &:focus {
             outline: 0;
-            border: 2px solid $classic-color;
+            border: 2px solid $blue-200;
         }
 
         &:hover {
-            background-color: $icon-active-color;
+            background-color: $blue-100;
 
             & .svg {
-                fill: $icon-color;
+                fill: $grey-300;
             }
         }
 
         &:active {
-            background-color: $classic-color;
+            background-color: $blue-200;
         }
     }
 
     &__link {
         width: 80px;
         height: 50px;
-        background-color: $fone-color;
+        background-color: $beige-300;
         transition: background-color 0.3s;
         position: relative;
 
         &:focus {
             outline: 0;
-            border: 2px solid $classic-color;
+            border: 2px solid $blue-200;
         }
 
         &:hover {
-            background-color: $icon-active-color;
+            background-color: $blue-200;
         }
 
         &:active {
-            background-color: $classic-color;
+            background-color: $blue-200;
         }
 
 
@@ -218,7 +217,7 @@
                 content: '';
                 height: 35px;
                 width: 1px;
-                background-color: #fff;
+                background-color: $white;
                 position: absolute;
                 top: 8px;
             }
@@ -230,8 +229,8 @@
         height: 16px;
         font-size: 10px;
         @extend %dmsans-400;
-        color: $first-color;
-        background-color: #fff;
+        color: $black-300;
+        background-color: $white;
         border-radius: 50%;
         text-align: center;
         line-height: 1.6;

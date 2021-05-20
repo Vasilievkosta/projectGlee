@@ -1,5 +1,5 @@
 .page-top {
-    background-color: $icon-color;
+    background-color: $grey-300;
     padding: 20px 0 30px;
     text-align: center;
 
@@ -7,7 +7,7 @@
         @extend %rubik-300;
         font-size: 36px;
         line-height: 1.4;
-        color: $data-color;
+        color: $black-400;
         text-align: center;
         @include clamp;
     }
@@ -15,7 +15,7 @@
     &__text {
         @extend %rubik-400;
         font-size: 14px;
-        color: $page-text-color;
+        color: $grey-800;
         @include clamp;
     }
 }

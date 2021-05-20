@@ -9,8 +9,8 @@ body {
     flex-direction: column;
     font-size: 16px;
     line-height: 1.5;
-    color: $title-color;
-    background-color: $bg-color;
+    color: $black-600;
+    background-color: $white;
 }
 
 main {
@@ -64,7 +64,7 @@ main {
     @extend %dmsans-700;
     font-size: 36px;
     line-height: 1.2;
-    color: $title-color;
+    color: $black-600;
     text-align: center;
     margin-bottom: 25px;
     @include clamp;
@@ -73,13 +73,13 @@ main {
 .mix-nav {
     @extend %dmsans-700;
     font-size: 16px;
-    color: $menu-color;
+    color: $grey-700;
     display: flex;
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 70px;
 
-    @media (max-width: $screen-mobileX) {
+    @media (max-width: $S) {
         display: block;
         margin: 0 auto 50px;
         text-align: center;
@@ -89,7 +89,7 @@ main {
         &:not(:last-child) {
             margin-right: 30px;
 
-            @media (max-width: $screen-mobileX) {
+            @media (max-width: $S) {
                 margin-right: 0;
                 padding-bottom: 20px;
             }
@@ -99,22 +99,22 @@ main {
     &__link {
         border: none;
         padding: 0;
-        background-color: $bg-color;
+        background-color: $white;
         border-bottom: 1px solid transparent;
         transition: border-bottom 0.3s;
 
         &:focus {
             outline: 0;
-            color: $classic-color;
+            color: $blue-200;
         }
 
         &:hover {
-            border-color: $first-color;
-            color: $first-color;
+            border-color: $black-300;
+            color: $black-300;
         }
 
         &:active {
-            color: $accent-color;
+            color: $red;
         }
     }
 }

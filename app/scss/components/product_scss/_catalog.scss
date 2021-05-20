@@ -17,7 +17,7 @@
         @extend %dmsans-700;
         font-size: 18px;
         line-height: 1.2;
-        color: $first-color;
+        color: $black-300;
         text-transform: uppercase;
         margin-bottom: 30px;
 
@@ -26,7 +26,7 @@
             width: 39px;
             height: 3px;
             border-radius: 1px;
-            background-color: $icon-active-color;
+            background-color: $blue-100;
             position: absolute;
             transform: translate(15px, 9px);
         }
@@ -41,7 +41,7 @@
         justify-content: space-between;
         @extend %rubik-400;
         font-size: 14px;
-        color: $first-color;
+        color: $black-300;
     }
 
 
@@ -50,7 +50,7 @@
 .irs--flat .irs-line {
     top: 25px;
     height: 3px;
-    background-color: $icon-active-color;
+    background-color: $blue-100;
     opacity: 0.65;
     border-radius: 1px;
 }
@@ -59,13 +59,13 @@
     top: 20px;
     width: 15px;
     height: 15px;
-    background-color: $icon-active-color;
+    background-color: $blue-100;
 }
 
 .irs--flat .irs-bar {
     top: 25px;
     height: 4px;
-    background-color: $icon-active-color;
+    background-color: $blue-100;
 }
 
 .irs--flat .irs-handle>i:first-child {

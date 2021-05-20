@@ -5,7 +5,7 @@
         display: flex;
         justify-content: space-between;
 
-        @media (max-width: $screen-laptop) {
+        @media (max-width: $L) {
             display: block;
         }
     }
@@ -13,7 +13,7 @@
     &__content {
         max-width: 310px;
 
-        @media (max-width: $screen-laptop) {
+        @media (max-width: $L) {
             max-width: 100%;
         }
     }
@@ -24,24 +24,24 @@
 
     &__text {
         font-size: 16px;
-        color: $first-color;
+        color: $black-300;
         line-height: 1.9;
         margin-bottom: 35px;
 
-        @media (max-width: $screen-laptop) {
+        @media (max-width: $L) {
             margin-bottom: 20px;
         }
     }
 
     &__btn {
         font-size: 14px;
-        background-color: $mission-before-color;
-        color: $bg-color;
+        background-color: $blue-100;
+        color: $white;
         padding: 20px 70px 20px 15px;
         border-radius: 5px;
         transition: background-color 0.3s;
 
-        @media (max-width: $screen-laptop) {
+        @media (max-width: $L) {
             margin-left: 50%;
             transform: translateX(-50%);
             margin-bottom: 20px;
@@ -49,16 +49,16 @@
     }
 
     &__btn:hover {
-        color: $bg-color;
-        background-color: $default-color;
+        color: $white;
+        background-color: $blue-400;
     }
 
     &__btn:active {
-        background-color: $mission-before-color;
-        color: $default-color;
+        background-color: $blue-100;
+        color: $blue-400;
 
         & .team__svg {
-            fill: $default-color;
+            fill: $blue-400;
         }
     }
 
@@ -72,7 +72,7 @@
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 30px;
 
-        @media (max-width: $screen-mobileX) {
+        @media (max-width: $S) {
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(4, 1fr);
         }
@@ -87,7 +87,7 @@
         position: relative;
         max-height: 320px;
 
-        @media (max-width: $screen-laptop) {
+        @media (max-width: $L) {
             margin: 0 auto;
         }
     }
@@ -95,7 +95,7 @@
     &__label {
         display: flex;
         justify-content: space-between;
-        background-color: $bg-color;
+        background-color: $white;
         box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.45);
         padding: 25px;
         max-width: 325px;
@@ -103,7 +103,7 @@
         position: absolute;
         transform: translateY(-50px);
 
-        @media (max-width: $screen-tablet) {
+        @media (max-width: $M) {
             padding: 15px;
             max-width: 265px;
         }
@@ -113,13 +113,13 @@
         @extend %dmsans-700;
         font-size: 22px;
         margin-bottom: 5px;
-        color: $team-name-color;
+        color: $blue-300;
     }
 
     &__prof {
         @extend %rubik-400;
         font-size: 16px;
-        color: $team-prof-color;
+        color: $blue-500;
     }
 
     &__links {
@@ -133,21 +133,21 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background-color: $team-link-color;
+        background-color: $grey-200;
         transition: background-color 0.3s;
         position: relative;
         display: inline-block;
 
         &:hover {
-            background-color: $mission-before-color;
+            background-color: $blue-100;
 
             & .svg {
-                fill: $icon-color;
+                fill: $grey-300;
             }
         }
 
         &:active {
-            background-color: $default-color;
+            background-color: $blue-400;
         }
     }
 }

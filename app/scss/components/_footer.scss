@@ -2,7 +2,7 @@
     @extend %rubik-400;
     font-size: 14px;
     line-height: 2.3;
-    color: #7b7b7b;
+    color: $grey-850;
 
     &__logo {
         margin-bottom: 25px;
@@ -11,11 +11,11 @@
 
     &__top {
         padding: 80px 0 60px;
-        border-bottom: 1px solid #dae4e9;
+        border-bottom: 1px solid $grey-450;
         display: flex;
         justify-content: space-between;
 
-        @media (max-width: $screen-laptopL) {
+        @media (max-width: $XL) {
             flex-wrap: wrap;
             justify-content: center;
             padding: 40px 0;
@@ -28,14 +28,14 @@
             width: 235px;
             margin-right: 100px;
 
-            @media (max-width: $screen-laptopL) {
+            @media (max-width: $XL) {
                 margin-right: 30px;
             }
         }
 
         &:nth-child(2),
         &:nth-child(3) {
-            @media (max-width: $screen-laptopL) {
+            @media (max-width: $XL) {
                 width: 100px;
             }
         }
@@ -45,7 +45,7 @@
         @extend %dmsans-700;
         margin: 10px 0;
         font-size: 16px;
-        color: #333366;
+        color: $blue-600;
         text-transform: uppercase;
     }
 
@@ -58,15 +58,15 @@
 
         &:focus {
             outline: 0;
-            color: $classic-color;
+            color: $blue-200;
         }
 
         &:hover {
-            color: $menu-active-color;
+            color: $black-500;
         }
 
         &:active {
-            color: $accent-color;
+            color: $red;
         }
     }
 
@@ -83,15 +83,15 @@
         width: 100%;
         border: none;
         padding: 3px 10px;
-        background-color: #fef7f0;
-        color: #333366;
+        background-color: $beige-100;
+        color: $blue-600;
         margin-right: -4px;
         outline: 0;
 
         &::-webkit-input-placeholder {
             @extend %dmsans-400;
             font-size: 12px;
-            color: #234969;
+            color: $blue-700;
             padding: 0 10px;
         }
     }
@@ -100,8 +100,8 @@
         min-width: 100px;
         padding: 3px;
         border: none;
-        background-color: $icon-active-color;
-        color: #fff;
+        background-color: $blue-200;
+        color: $white;
         cursor: pointer;
         transition: color 0.3s;
         white-space: nowrap;
@@ -114,11 +114,11 @@
         }
 
         &:hover {
-            color: $menu-active-color;
+            color: $black-500;
         }
 
         &:active {
-            background-color: $default-color;
+            background-color: $blue-400;
         }
     }
 
@@ -139,7 +139,7 @@
 
         &:not(:last-child) {
             padding-right: 15px;
-            border-right: 1px solid #b7b7b7;
+            border-right: 1px solid $grey-850;
         }
     }
 }
@@ -161,7 +161,7 @@
         }
 
         &:hover {
-            color: $menu-active-color;
+            color: $black-500;
         }
     }
 }

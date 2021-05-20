@@ -1,12 +1,12 @@
 .partners {
-    background-color: $partners-color;
+    background-color: $beige-100;
     padding: 80px 0;
 
-    @media (max-width: $screen-laptopL) {
+    @media (max-width: $XL) {
         padding: 20px;
     }
 
-    @media (max-width: $screen-mobileX) {
+    @media (max-width: $S) {
         padding: 10px 0;
     }
 

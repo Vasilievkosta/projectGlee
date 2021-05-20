@@ -1,7 +1,7 @@
 .articles {
     padding-top: 100px;
 
-    @media (max-width: $screen-laptopL) {
+    @media (max-width: $XL) {
         padding-top: 55px;
     }
 
@@ -10,7 +10,7 @@
 
         position: relative;
 
-        @media (max-width: $screen-laptopL) {
+        @media (max-width: $XL) {
             text-align: center;
         }
     }
@@ -18,7 +18,7 @@
     &__title {
         text-align: left;
 
-        @media (max-width: $screen-tablet) {
+        @media (max-width: $M) {
             text-align: center;
         }
     }
@@ -37,10 +37,10 @@
 
 
         &:hover {
-            border-color: $default-color;
+            border-color: $blue-400;
         }
 
-        @media (max-width: $screen-tablet) {
+        @media (max-width: $M) {
             top: -30px;
         }
 
@@ -55,7 +55,7 @@
         margin-bottom: -185px;
         flex-wrap: wrap;
 
-        @media (max-width: $screen-laptopL) {
+        @media (max-width: $XL) {
             margin-bottom: 50px;
         }
     }
@@ -63,17 +63,17 @@
     &__item {
         max-width: 370px;
 
-        @media (max-width: $screen-laptopL) {
+        @media (max-width: $XL) {
             margin: 0 auto;
         }
 
-        @media (max-width: $screen-tablet) {
+        @media (max-width: $M) {
             margin-bottom: 20px;
         }
     }
 
     &__bg {
-        background-color: $partners-color;
+        background-color: $beige-100;
         height: 165px;
     }
 }
@@ -81,15 +81,15 @@
 .news-card {
     border-radius: 6px;
     position: relative;
-    background-color: $bg-color;
+    background-color: $white;
     transition: transform 0.3s;
 
     &:hover {
         transform: translateY(-1%);
     }
 
-    @media (max-width: $screen-laptopL) {
-        background-color: $desing-color;
+    @media (max-width: $XL) {
+        background-color: $grey-100;
     }
 
     &__img {
@@ -100,8 +100,8 @@
     }
 
     &__news {
-        background-color: $icon-active-color;
-        color: $bg-color;
+        background-color: $blue-100;
+        color: $white;
         padding: 5px 30px;
         @extend %poppins-700;
         font-size: 14px;
@@ -112,7 +112,7 @@
         left: 30px;
         transform: translateY(-50%);
 
-        @media (max-width: $screen-mobileX) {
+        @media (max-width: $S) {
             top: 0;
             left: 0;
         }
@@ -123,7 +123,7 @@
         font-size: 18px;
         line-height: 1.3;
         padding: 30px 0 15px;
-        border-bottom: 1px solid $articles-border-color;
+        border-bottom: 1px solid $grey-400;
         margin: 0 30px;
         height: 110px;
         @include clamp(3);
@@ -133,7 +133,7 @@
         @extend %myriadpro-400;
         line-height: 2.5;
         font-size: 12px;
-        color: $data-color;
+        color: $black-400;
         text-transform: uppercase;
         margin: 15px 30px;
         padding-bottom: 15px;
