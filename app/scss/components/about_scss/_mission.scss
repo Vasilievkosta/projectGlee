@@ -1,31 +1,42 @@
 .mission {
-    padding: 120px 0;
+    padding-top: 120px;
 
-    @media (max-width: $XL) {
+    @include r ($XL) {
         padding: 50px 0;
     }
 
     &__wrap {
-        display: flex;
-        justify-content: space-between;
+        background-image: url('../images/about-bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 125px;
 
-        @media (max-width: $XL) {
-            flex-direction: column;
-            max-width: 80%;
+        @include r ($XXL) {
+            background-size: 50%;
+            margin-bottom: 70px;
         }
 
-        @media (max-width: $M) {
-            max-width: 100%;
+        @include r($L) {
+            background-position-y: bottom;
+        }
+
+        @include r($M) {
+            background: $grey-300;
+            margin-bottom: 30px;
         }
     }
 
-    &__img {
-        margin-right: 45px;
-        max-width: 570px;
-        object-fit: contain;
+    &__content {
+        padding: 0 0 90px 30px;
+        width: 50%;
+        margin-left: auto;
 
-        @media (max-width: $XL) {
-            margin-right: 0;
+        @include r($L) {
+            padding: 10px;
+        }
+
+        @include r($M) {
+            width: 100%;
         }
     }
 
@@ -41,7 +52,9 @@
         white-space: normal;
         max-width: 500px;
 
-        @media (max-width: $M) {}
+        @include r($L) {
+            margin-bottom: 10px;
+        }
 
         &:before {
             content: '12';
@@ -51,6 +64,12 @@
             color: $blue-100;
             top: 0;
             left: 0;
+
+            @include r($L) {
+                line-height: 1;
+                top: auto;
+                bottom: -10px;
+            }
         }
     }
 
@@ -69,7 +88,7 @@
         max-height: 130px;
         overflow: hidden;
 
-        @media (max-width: $XL) {
+        @include r($XL) {
             margin-bottom: 20px;
         }
     }
@@ -80,7 +99,7 @@
         padding-top: 20px;
         border-top: 2px solid $grey-500;
 
-        @media (max-width: $XL) {
+        @include r($XL) {
             justify-content: space-evenly;
             flex-wrap: wrap;
         }
@@ -88,7 +107,7 @@
 
     &__item {
         position: relative;
-        overflow: hidden;
+        // overflow: hidden;
         max-width: 100px;
         white-space: nowrap;
 
@@ -96,12 +115,12 @@
             padding-right: 20px;
             border-right: 1px solid $grey-500;
 
-            @media (max-width: $XL) {
+            @include r($XL) {
                 border-right: none;
             }
         }
 
-        &-project {
+        &--project {
             &:before {
                 content: '';
                 position: absolute;
@@ -112,24 +131,32 @@
                 right: calc(100% + 10px);
                 transform: translateY(-50%);
 
-                @media (max-width: $S) {
+                @include r($L) {
+                    display: none;
+                }
+
+                @include r($M) {
+                    display: initial;
+                }
+
+                @include r($S) {
                     display: none;
                 }
             }
         }
 
-        &-revenue {
+        &--revenue {
             &:before {
-                @extend .mission__item-project:before;
+                @extend .mission__item--project:before;
                 background-image: url('../images/icon/revenue.svg');
                 width: 43px;
                 height: 40px;
             }
         }
 
-        &-awards {
+        &--awards {
             &:before {
-                @extend .mission__item-project:before;
+                @extend .mission__item--project:before;
                 background-image: url('../images/icon/awards.svg');
                 width: 42px;
                 height: 42px;

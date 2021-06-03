@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Glee | About</title>
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.min.css">
-</head>
+@@include('../parts/index_html/_head.html', {
+"title": "About"
+})
 
 <body>
 
-	@@include('../parts/_header.html')
+	@@include('../parts/index_html/_header.html')
 
 	<main class="main">
-		<h1 class="sr-only">shop glee</h1>
 
 		@@include('../parts/about_html/_pagetop.html')
 
@@ -25,13 +16,12 @@
 
 		@@include('../parts/about_html/_team.html')
 
-		@@include('../parts/_articles.html')
-
-		@@include('../parts/_partners.html')
+		@@include('../parts/index_html/_articles.html')
+		@@include('../parts/index_html/_partners.html')
 
 	</main>
 
-	@@include('../parts/_footer.html')
+	@@include('../parts/index_html/_footer.html')
 
 
 	<script src="js/main.min.js"></script>

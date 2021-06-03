@@ -1,7 +1,7 @@
 .articles {
     padding-top: 100px;
 
-    @media (max-width: $XL) {
+    @include r ($XL) {
         padding-top: 55px;
     }
 
@@ -10,7 +10,7 @@
 
         position: relative;
 
-        @media (max-width: $XL) {
+        @include r ($XL) {
             text-align: center;
         }
     }
@@ -18,7 +18,7 @@
     &__title {
         text-align: left;
 
-        @media (max-width: $M) {
+        @include r ($M) {
             text-align: center;
         }
     }
@@ -40,7 +40,7 @@
             border-color: $blue-400;
         }
 
-        @media (max-width: $M) {
+        @include r ($M) {
             top: -30px;
         }
 
@@ -55,19 +55,19 @@
         margin-bottom: -185px;
         flex-wrap: wrap;
 
-        @media (max-width: $XL) {
-            margin-bottom: 50px;
+        @include r ($XL) {
+            margin-bottom: 30px;
         }
     }
 
     &__item {
         max-width: 370px;
 
-        @media (max-width: $XL) {
+        @include r ($XL) {
             margin: 0 auto;
         }
 
-        @media (max-width: $M) {
+        @include r ($M) {
             margin-bottom: 20px;
         }
     }
@@ -75,6 +75,10 @@
     &__bg {
         background-color: $beige-100;
         height: 165px;
+
+        @include r ($XL) {
+            display: none;
+        }
     }
 }
 
@@ -88,7 +92,7 @@
         transform: translateY(-1%);
     }
 
-    @media (max-width: $XL) {
+    @include r ($XL) {
         background-color: $grey-100;
     }
 
@@ -112,7 +116,7 @@
         left: 30px;
         transform: translateY(-50%);
 
-        @media (max-width: $S) {
+        @include r ($S) {
             top: 0;
             left: 0;
         }
@@ -142,6 +146,33 @@
     }
 
     &__time {
-        margin-right: 45px;
+        margin: 0 45px 0 20px;
+        position: relative;
+
+
+        &::before {
+            content: '';
+            background-image: url('../images/icon/calendar.svg');
+            width: 14px;
+            height: 16px;
+            position: absolute;
+            top: -5px;
+            left: -16px;
+        }
+    }
+
+    &__name {
+        margin-left: 20px;
+        position: relative;
+
+        &::before {
+            content: '';
+            background-image: url('../images/icon/user.svg');
+            width: 14px;
+            height: 16px;
+            position: absolute;
+            top: -5px;
+            left: -16px;
+        }
     }
 }

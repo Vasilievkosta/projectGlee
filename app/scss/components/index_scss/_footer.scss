@@ -15,7 +15,7 @@
         display: flex;
         justify-content: space-between;
 
-        @media (max-width: $XL) {
+        @include r ($XL) {
             flex-wrap: wrap;
             justify-content: center;
             padding: 40px 0;
@@ -28,14 +28,14 @@
             width: 235px;
             margin-right: 100px;
 
-            @media (max-width: $XL) {
+            @include r ($XL) {
                 margin-right: 30px;
             }
         }
 
         &:nth-child(2),
         &:nth-child(3) {
-            @media (max-width: $XL) {
+            @include r ($XL) {
                 width: 100px;
             }
         }
@@ -100,7 +100,7 @@
         min-width: 100px;
         padding: 3px;
         border: none;
-        background-color: $blue-200;
+        background-color: $blue-100;
         color: $white;
         cursor: pointer;
         transition: color 0.3s;

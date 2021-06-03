@@ -9,7 +9,7 @@
             & li button {
                 margin-right: 10px;
                 font-size: 11px;
-                line-height: 0.8;
+                line-height: 1;
                 @extend %rubik-500;
                 color: $black-300;
                 background-color: $white;
@@ -50,22 +50,22 @@
         padding: 215px 0 200px;
         position: relative;
 
-        @media (max-width: $XL) {
+        @include r ($XL) {
             padding: 120px 0;
         }
 
-        @media (max-width: $L) {
+        @include r ($L) {
             padding: 50px 0;
             justify-content: center;
         }
 
-        @media (max-width: $M) {
+        @include r ($M) {
             display: block;
         }
 
         &::before {
             content: '';
-            background-image: linear-gradient(-90.0deg, #ffffff 0%, rgba(255, 255, 255, 0.0) 100%);
+            background-image: linear-gradient(-90.0deg, $white 0%, rgba($black, 0.0) 100%);
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -77,18 +77,18 @@
             left: 57%;
             z-index: -5;
 
-            @media (max-width: $XXL) {
+            @include r ($XXL) {
                 left: 38%;
-                background-image: linear-gradient(90.0deg, #ffffff 0%, rgba(255, 255, 255, 0.0) 100%);
+                background-image: linear-gradient(90.0deg, $white 0%, rgba($black, 0.0) 100%);
             }
 
-            @media (max-width: $XL) {
+            @include r ($XL) {
                 width: calc(0.75*610px);
                 height: calc(0.75*634px);
                 top: 45px;
             }
 
-            @media (max-width: $L) {
+            @include r ($L) {
                 display: none;
             }
         }
@@ -97,7 +97,7 @@
     &__content {
         max-height: 350px;
 
-        @media (max-width: $M) {
+        @include r ($M) {
             max-width: 100%;
             text-align: center;
         }
@@ -113,15 +113,15 @@
         margin-bottom: 25px;
         @include clamp(2);
 
-        @media (max-width: $XL) {
+        @include r ($XL) {
             font-size: 60px;
         }
 
-        @media (max-width: $M) {
+        @include r ($M) {
             font-size: 40px;
         }
 
-        @media (max-width: $S) {
+        @include r ($S) {
             font-size: 24px;
         }
     }
@@ -135,12 +135,12 @@
         color: $blue-400;
         @include clamp(2);
 
-        @media (max-width: $M) {
+        @include r ($M) {
             max-width: 100%;
             text-align: center;
         }
 
-        @media (max-width: $S) {
+        @include r ($S) {
             max-height: 90px;
         }
     }
@@ -152,7 +152,7 @@
         padding: 25px 95px 23px 30px;
         border: 1px solid transparent;
 
-        @media (max-width: $M) {
+        @include r ($M) {
             margin-bottom: 20px;
         }
 
@@ -173,19 +173,19 @@
         max-height: 265px;
         margin-top: auto;
 
-        @media (max-width: $XL) {
+        @include r ($XL) {
             max-height: 240px;
         }
 
-        @media (max-width: $L) {
+        @include r ($L) {
             max-height: 150px;
         }
 
-        @media (max-width: $M) {
+        @include r ($M) {
             margin: 0 auto;
         }
 
-        @media (max-width: $S) {
+        @include r ($S) {
             max-height: 120px;
         }
     }

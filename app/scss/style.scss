@@ -2,18 +2,20 @@
 @import 'vars';
 @import 'reset';
 @import 'libs';
+@import 'mixin';
+@import 'card';
 @import 'global';
 
-@import 'components/header';
-@import 'components/myslider';
-@import 'components/advantage';
-@import 'components/product';
-@import 'components/lamp';
-@import 'components/design';
-@import 'components/video';
-@import 'components/articles';
-@import 'components/partners';
-@import 'components/footer';
+@import 'components/index_scss/header';
+@import 'components/index_scss/myslider';
+@import 'components/index_scss/advantage';
+@import 'components/index_scss/product';
+@import 'components/index_scss/lamp';
+@import 'components/index_scss/design';
+@import 'components/index_scss/video';
+@import 'components/index_scss/articles';
+@import 'components/index_scss/partners';
+@import 'components/index_scss/footer';
 
 //styles for About page
 
@@ -21,9 +23,6 @@
 @import 'components/about_scss/mission';
 @import 'components/about_scss/service';
 @import 'components/about_scss/team';
-
-
-
 
 //styles for Product page
 

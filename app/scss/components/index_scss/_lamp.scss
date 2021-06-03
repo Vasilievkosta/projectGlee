@@ -2,32 +2,34 @@
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: $XXL) {
+    @include r ($XXL) {
         justify-content: space-around;
     }
 
-    @media (max-width: $M) {
+    @include r ($M) {
         display: block;
     }
 }
+
 
 .lamp-card {
     background-color: $beige-200;
     display: flex;
     padding: 90px 145px 80px;
+    height: 100%;
 
-    @media (max-width: $XXL) {
+    @include r ($XXL) {
         padding: 10px;
         margin: 20px;
         align-items: center;
         gap: 20px;
     }
 
-    @media (max-width: $M) {
+    @include r ($M) {
         margin: 10px;
     }
 
-    @media (max-width: $XS) {
+    @include r ($S) {
         display: block;
         text-align: center;
     }
@@ -35,7 +37,7 @@
     &__wrap {
         margin: -185px 20px 0 0;
 
-        @media (max-width: $XXL) {
+        @include r ($XXL) {
             margin: 0;
         }
     }
@@ -44,11 +46,11 @@
         max-height: 405px;
         object-fit: contain;
 
-        @media (max-width: $XXL) {
+        @include r ($XXL) {
             margin: 0 auto;
         }
 
-        @media (max-width: $XS) {
+        @include r ($S) {
             margin-bottom: 20px;
         }
     }

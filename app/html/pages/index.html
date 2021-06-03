@@ -1,39 +1,25 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glee</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.min.css">
-</head>
+﻿@@include('../parts/index_html/_head.html', {
+"title": "Home"
+})
 
 <body>
 
-    @@include('../parts/_header.html')
+    @@include('../parts/index_html/_header.html')
 
     <main class="main">
         <h1 class="sr-only">shop glee</h1>
 
-        @@include('../parts/_myslider.html')
-
-        @@include('../parts/_advantage.html')
-
-        @@include('../parts/_product.html')
-
-        @@include('../parts/_design.html')
-
-        @@include('../parts/_video.html')
-
-        @@include('../parts/_articles.html')
-
-        @@include('../parts/_partners.html')
+        @@include('../parts/index_html/_myslider.html')
+        @@include('../parts/index_html/_advantage.html')
+        @@include('../parts/index_html/_product.html')
+        @@include('../parts/index_html/_design.html')
+        @@include('../parts/index_html/_video.html')
+        @@include('../parts/index_html/_articles.html')
+        @@include('../parts/index_html/_partners.html')
 
     </main>
 
-    @@include('../parts/_footer.html')
+    @@include('../parts/index_html/_footer.html')
 
 
     <script src="js/main.min.js"></script>

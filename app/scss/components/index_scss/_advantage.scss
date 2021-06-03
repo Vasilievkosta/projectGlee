@@ -5,7 +5,7 @@
     align-items: center;
     position: relative;
 
-    @media (max-width: $L) {
+    @include r ($L) {
         flex-wrap: wrap;
     }
 
@@ -17,7 +17,7 @@
         position: absolute;
         left: 33.3%;
 
-        @media (max-width: $L) {
+        @include r ($L) {
             display: none;
         }
     }
@@ -30,7 +30,7 @@
         position: absolute;
         right: 33.3%;
 
-        @media (max-width: $L) {
+        @include r ($L) {
             display: none;
         }
     }

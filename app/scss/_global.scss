@@ -50,13 +50,13 @@ main {
 .btn {
     font-size: 15px;
     line-height: 1;
-    padding: 25px 0;
+    padding: 25px 3px;
     display: inline-block;
     position: relative;
     transition: color 0.3s;
     white-space: nowrap;
     text-overflow: clip;
-    max-width: 200px;
+    // max-width: 200px;
     overflow: hidden;
 }
 
@@ -79,7 +79,7 @@ main {
     margin: 0 auto;
     margin-bottom: 70px;
 
-    @media (max-width: $S) {
+    @include r ($S) {
         display: block;
         margin: 0 auto 50px;
         text-align: center;
@@ -89,7 +89,7 @@ main {
         &:not(:last-child) {
             margin-right: 30px;
 
-            @media (max-width: $S) {
+            @include r ($S) {
                 margin-right: 0;
                 padding-bottom: 20px;
             }

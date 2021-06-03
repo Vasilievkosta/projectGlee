@@ -1,11 +1,11 @@
 $black: #000;
-$black-600: #191919;
-$black-500: #1a1a1a;
-$black-400: #222933;
-$black-300: #243f4d;
 $black-200: #4c4c4c;
+$black-300: #243f4d;
+$black-400: #222933;
+$black-450: #252525;
+$black-500: #1a1a1a;
+$black-600: #191919;
 
-$blue-100: #a3bbc8;
 $blue-100: #a3bbc8;
 $blue-200: #99cccc;
 $blue-300: #5c7885;
@@ -39,51 +39,7 @@ $XL: 1199px;
 $L: 1023px;
 $M: 767px;
 $S: 575px;
-$XS: 425px;
-
-// $white: #fff;
-// $black-600: #191919;
-// $bg-color: #fff;
-// $black-color: #000;
-// $default-color: #436372;
-// $first-color: #243f4d;
-// $icon-color: #edf1f4;
-// $icon-active-color: #a3bbc8;
-// $fone-color: #fcd7b6;
-// $title-color: #191919;
-// $menu-color: #8b8b8b;
-// $menu-active-color: #1a1a1a;
-// $classic-color: #99cccc;
-// $accent-color: red;
-// $data-color: #222933;
-// $bg-lamp-color: #feefe2;
-// $link-lamp-color: #b3b7b5;
-// $desing-color: #f8f8f8;
-// $partners-color: #fef7f0;
-// $articles-border-color: #e0e0e0;
-// $mission-border-color: #cecece;
-// $mission-name-color: #4c4c4c;
-// $mission-before-color: #a3bbc8;
-// $team-name-color: #5c7885;
-// $team-prof-color: #565872;
-// $team-link-color: #f6f6f6;
-// $page-text-color: #7b8188;
-
-// $screen-laptopX: 1439px;
-// $screen-laptopL: 1199px;
-// $screen-laptop: 1023px;
-// $screen-tablet: 767px;
-// $screen-mobileX: 575px;
-// $screen-mobileL: 425px;
-
-@mixin clamp($line: 1) {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: initial;
-    display: -webkit-box;
-    -webkit-line-clamp: $line;
-    -webkit-box-orient: vertical;
-}
+// $XS: 425px;
 
 %rubik-300 {
     font-family: 'Rubik', sans-serif;

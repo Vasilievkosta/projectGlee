@@ -1,0 +1,14 @@
+@mixin r($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin clamp($line: 1) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+}

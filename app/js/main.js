@@ -72,6 +72,8 @@ $(function () {
 
 });
 
+//burger menu
+
 let burger = document.querySelector('.menu__btn');
 let menu = document.querySelector('.menu__list');
 
@@ -82,20 +84,23 @@ burger.addEventListener('click', function () {
 
 //fixed header
 
-const header = document.querySelector('.header');
-const headerWrap = document.querySelector('.header__wrap');
+// const header = document.querySelector('.header');
+// const headerWrap = document.querySelector('.header__wrap');
+// const nav = document.querySelector('.nav');
 
-window.addEventListener('scroll', () => {
+// window.addEventListener('scroll', () => {
 
-    let scrollTop = window.scrollY;
-    let heightPart = headerWrap.offsetHeight;
+//     let scrollTop = window.scrollY;
+//     let heightPart = headerWrap.offsetHeight;
 
-    if (scrollTop > heightPart) {
+//     if (scrollTop > heightPart) {
 
-        headerWrap.classList.add('header__fixed');
-        header.style.marginTop = heightPart + 'px';
-    } else {
-        headerWrap.classList.remove('header__fixed');
-        header.style.marginTop = '0px';
-    }
-});
+//         headerWrap.classList.add('header__fixed');
+//         header.style.marginTop = heightPart + 'px';
+//         nav.classList.add('nav__fixed');
+//     } else {
+//         headerWrap.classList.remove('header__fixed');
+//         header.style.marginTop = '0px';
+//         nav.classList.remove('nav__fixed');
+//     }
+// });
