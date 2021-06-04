@@ -3,15 +3,16 @@
 @import 'reset';
 @import 'libs';
 @import 'mixin';
-@import 'card';
 @import 'global';
 
 @import 'components/index_scss/header';
 @import 'components/index_scss/myslider';
 @import 'components/index_scss/advantage';
 @import 'components/index_scss/product';
+@import 'components/index_scss/product-card';
 @import 'components/index_scss/lamp';
 @import 'components/index_scss/design';
+@import 'components/index_scss/design-card';
 @import 'components/index_scss/video';
 @import 'components/index_scss/articles';
 @import 'components/index_scss/partners';
@@ -23,6 +24,7 @@
 @import 'components/about_scss/mission';
 @import 'components/about_scss/service';
 @import 'components/about_scss/team';
+@import 'components/about_scss/team-card';
 
 //styles for Product page
 

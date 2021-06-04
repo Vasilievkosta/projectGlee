@@ -26,348 +26,60 @@
         <ul class="product__inners">
 
             <li class="product__item mix category-c">
-                <article class="product-card">
-                    <div class="product-card__wrap">
-                        <img class="product-card__img" src="images/content/img1.png" alt="product image">
-                        <ul class="product-card__list">
-                            <li class="product-card__item">
-                                <a class="product-card__link" href="#">
-                                    <svg class="svg product-card__svg" width="16" height="16">
-                                        <use xlink:href="images/stack/sprite.svg#icon--search"></use>
-                                    </svg>
-
-                                    <span class="sr-only">go to search</span>
-                                </a>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="18" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--basket"></use>
-                                    </svg>
-
-                                    <span class="sr-only">add to basket</span>
-                                </button>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="19" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--like"></use>
-                                    </svg>
-                                    <span class="sr-only">add to like</span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-card__text">
-                        <h3 class="product-card__title">
-                            Wooden radio
-                        </h3>
-                        <p class="product-card__price">
-                            <span>$</span>29.00
-                        </p>
-                    </div>
-                </article>
+                @@include('_product-card.html', {
+                "numberImg": "1",
+                "nameImg": "Wooden radio",
+                "price": "29.00"
+                })
             </li>
             <li class="product__item mix category-b">
-                <article class="product-card">
-                    <div class="product-card__wrap">
-                        <img class="product-card__img" src="images/content/img2.png" alt="product image">
-                        <ul class="product-card__list">
-                            <li class="product-card__item">
-                                <a class="product-card__link" href="#">
-                                    <svg class="svg product-card__svg" width="16" height="16">
-                                        <use xlink:href="images/stack/sprite.svg#icon--search"></use>
-                                    </svg>
-
-                                    <span class="sr-only">go to search</span>
-                                </a>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="18" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--basket"></use>
-                                    </svg>
-
-                                    <span class="sr-only">add to basket</span>
-                                </button>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="19" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--like"></use>
-                                    </svg>
-                                    <span class="sr-only">add to like</span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-card__text">
-                        <h3 class="product-card__title">
-                            Wooden radio
-                        </h3>
-                        <p class="product-card__price">
-                            <span>$</span>29.00
-                        </p>
-                    </div>
-                </article>
+                @@include('_product-card.html', {
+                "numberImg": "2",
+                "nameImg": "Wooden chair",
+                "price": "29.00"
+                })
             </li>
             <li class="product__item mix category-b">
-                <article class="product-card">
-                    <div class="product-card__wrap">
-                        <img class="product-card__img" src="images/content/img3.png" alt="product image">
-                        <ul class="product-card__list">
-                            <li class="product-card__item">
-                                <a class="product-card__link" href="#">
-                                    <svg class="svg product-card__svg" width="16" height="16">
-                                        <use xlink:href="images/stack/sprite.svg#icon--search"></use>
-                                    </svg>
-
-                                    <span class="sr-only">go to search</span>
-                                </a>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="18" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--basket"></use>
-                                    </svg>
-
-                                    <span class="sr-only">add to basket</span>
-                                </button>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="19" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--like"></use>
-                                    </svg>
-                                    <span class="sr-only">add to like</span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-card__text">
-                        <h3 class="product-card__title">
-                            Wooden radio
-                        </h3>
-                        <p class="product-card__price">
-                            <span>$</span>29.00
-                        </p>
-                    </div>
-                </article>
+                @@include('_product-card.html', {
+                "numberImg": "3",
+                "nameImg": "White chair",
+                "price": "29.00"
+                })
             </li>
             <li class="product__item mix category-d">
-                <article class="product-card">
-                    <div class="product-card__wrap">
-                        <img class="product-card__img" src="images/content/img4.png" alt="product image">
-                        <ul class="product-card__list">
-                            <li class="product-card__item">
-                                <a class="product-card__link" href="#">
-                                    <svg class="svg product-card__svg" width="16" height="16">
-                                        <use xlink:href="images/stack/sprite.svg#icon--search"></use>
-                                    </svg>
-
-                                    <span class="sr-only">go to search</span>
-                                </a>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="18" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--basket"></use>
-                                    </svg>
-
-                                    <span class="sr-only">add to basket</span>
-                                </button>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="19" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--like"></use>
-                                    </svg>
-                                    <span class="sr-only">add to like</span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-card__text">
-                        <h3 class="product-card__title">
-                            Wooden radio
-                        </h3>
-                        <p class="product-card__price">
-                            <span>$</span>29.00
-                        </p>
-                    </div>
-                </article>
+                @@include('_product-card.html', {
+                "numberImg": "4",
+                "nameImg": "Retro table",
+                "price": "29.00"
+                })
             </li>
             <li class="product__item mix category-c">
-                <article class="product-card">
-                    <div class="product-card__wrap">
-                        <img class="product-card__img" src="images/content/img5.png" alt="product image">
-                        <ul class="product-card__list">
-                            <li class="product-card__item">
-                                <a class="product-card__link" href="#">
-                                    <svg class="svg product-card__svg" width="16" height="16">
-                                        <use xlink:href="images/stack/sprite.svg#icon--search"></use>
-                                    </svg>
-
-                                    <span class="sr-only">go to search</span>
-                                </a>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="18" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--basket"></use>
-                                    </svg>
-
-                                    <span class="sr-only">add to basket</span>
-                                </button>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="19" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--like"></use>
-                                    </svg>
-                                    <span class="sr-only">add to like</span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-card__text">
-                        <h3 class="product-card__title">
-                            Wooden radio
-                        </h3>
-                        <p class="product-card__price">
-                            <span>$</span>29.00
-                        </p>
-                    </div>
-                </article>
+                @@include('_product-card.html', {
+                "numberImg": "5",
+                "nameImg": "Wooden radio",
+                "price": "29.00"
+                })
             </li>
             <li class="product__item mix category-b">
-                <article class="product-card">
-                    <div class="product-card__wrap">
-                        <img class="product-card__img" src="images/content/img6.png" alt="product image">
-                        <ul class="product-card__list">
-                            <li class="product-card__item">
-                                <a class="product-card__link" href="#">
-                                    <svg class="svg product-card__svg" width="16" height="16">
-                                        <use xlink:href="images/stack/sprite.svg#icon--search"></use>
-                                    </svg>
-
-                                    <span class="sr-only">go to search</span>
-                                </a>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="18" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--basket"></use>
-                                    </svg>
-
-                                    <span class="sr-only">add to basket</span>
-                                </button>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="19" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--like"></use>
-                                    </svg>
-                                    <span class="sr-only">add to like</span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-card__text">
-                        <h3 class="product-card__title">
-                            Wooden radio
-                        </h3>
-                        <p class="product-card__price">
-                            <span>$</span>29.00
-                        </p>
-                    </div>
-                </article>
+                @@include('_product-card.html', {
+                "numberImg": "6",
+                "nameImg": "Wooden chair",
+                "price": "29.00"
+                })
             </li>
             <li class="product__item mix category-b category-a">
-                <article class="product-card">
-                    <div class="product-card__wrap">
-                        <img class="product-card__img" src="images/content/img7.png" alt="product image">
-                        <ul class="product-card__list">
-                            <li class="product-card__item">
-                                <a class="product-card__link" href="#">
-                                    <svg class="svg product-card__svg" width="16" height="16">
-                                        <use xlink:href="images/stack/sprite.svg#icon--search"></use>
-                                    </svg>
-
-                                    <span class="sr-only">go to search</span>
-                                </a>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="18" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--basket"></use>
-                                    </svg>
-
-                                    <span class="sr-only">add to basket</span>
-                                </button>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="19" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--like"></use>
-                                    </svg>
-                                    <span class="sr-only">add to like</span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-card__text">
-                        <h3 class="product-card__title">
-                            Wooden radio
-                        </h3>
-                        <p class="product-card__price">
-                            <span>$</span>29.00
-                        </p>
-                    </div>
-                </article>
+                @@include('_product-card.html', {
+                "numberImg": "7",
+                "nameImg": "White chair",
+                "price": "29.00"
+                })
             </li>
             <li class="product__item mix category-a category-d">
-                <article class="product-card">
-                    <div class="product-card__wrap">
-                        <img class="product-card__img" src="images/content/img8.png" alt="product image">
-                        <ul class="product-card__list">
-                            <li class="product-card__item">
-                                <a class="product-card__link" href="#">
-                                    <svg class="svg product-card__svg" width="16" height="16">
-                                        <use xlink:href="images/stack/sprite.svg#icon--search"></use>
-                                    </svg>
-
-                                    <span class="sr-only">go to search</span>
-                                </a>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="18" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--basket"></use>
-                                    </svg>
-
-                                    <span class="sr-only">add to basket</span>
-                                </button>
-                            </li>
-                            <li class="product-card__item">
-                                <button class="product-card__btn" type="button">
-                                    <svg class="svg product-card__svg" width="19" height="17">
-                                        <use xlink:href="images/stack/sprite.svg#icon--like"></use>
-                                    </svg>
-                                    <span class="sr-only">add to like</span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-card__text">
-                        <h3 class="product-card__title">
-                            Wooden radio
-                        </h3>
-                        <p class="product-card__price">
-                            <span>$</span>29.00
-                        </p>
-                    </div>
-                </article>
+                @@include('_product-card.html', {
+                "numberImg": "8",
+                "nameImg": "Retro table",
+                "price": "28.00"
+                })
             </li>
         </ul>
     </div>
