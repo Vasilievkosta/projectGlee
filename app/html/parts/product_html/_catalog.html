@@ -1,26 +1,44 @@
 <section class="catalog">
     <div class="container">
+        <div class="catalog__control">
+            <button class="catalog__btn catalog__btn--grid">
+                <svg class="svg catalog__svg catalog__svg--active" width="15" height="15">
+                    <use xlink:href="images/stack/sprite.svg#icon--grid"></use>
+                </svg>
 
-        <a class="product-card__link" href="#">
-            <svg class="svg product-card__svg" width="15" height="15">
-                <use xlink:href="images/stack/sprite.svg#icon--grid"></use>
-            </svg>
+                <span class="sr-only">open grid</span>
+            </button>
+            <button class="catalog__btn catalog__btn--list">
+                <svg class="svg catalog__svg" width="20" height="15">
+                    <use xlink:href="images/stack/sprite.svg#icon--list"></use>
+                </svg>
 
-            <span class="sr-only">open grid</span>
-        </a>
-        <a class="product-card__link" href="#">
-            <svg class="svg product-card__svg" width="20" height="15">
-                <use xlink:href="images/stack/sprite.svg#icon--list"></use>
-            </svg>
+                <span class="sr-only">open list</span>
+            </button>
+        </div>
 
-            <span class="sr-only">open list</span>
-        </a>
 
         <div class="catalog__inner">
             <div class="catalog__filter">
                 <div class="catalog__category">
                     <h3 class="catalog__title">Category</h3>
-
+                    <ul class="catalog__list">
+                        <li class="catalog__item">
+                            <a class="catalog__link catalog__link--category" href="#">Chair</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link catalog__link--category" href="#">Table</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link catalog__link--category" href="#">Lamp</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link catalog__link--category" href="#">Watch</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link catalog__link--category" href="#">Clock</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="catalog__price">
                     <h3 class="catalog__title">Price</h3>
@@ -33,18 +51,164 @@
                         <p><span>$</span><span class="catalog__text-from"></span><span>.00</span></p>
                         <p><span>$</span><span class="catalog__text-to"></span><span>.00</span></p>
                     </div>
-
-
                 </div>
+
                 <div class="catalog__brand">
                     <h3 class="catalog__title">Brand</h3>
+                    <ul class="catalog__list">
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#">RFL
+                                <span class="catalog__count">(10)</span>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#">Brothers
+                                <span class="catalog__count">(21)</span>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#">Regal
+                                <span class="catalog__count">(3)</span>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#">Nadia
+                                <span class="catalog__count">(14)</span>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#">Otobi
+                                <span class="catalog__count">(6)</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="catalog__recent">
-                    <h3 class="catalog__title">Recent</h3>
+                    <h3 class="catalog__title">Recent Product</h3>
+                    <ul class="catalog__list">
+                        <li class="catalog__point">
+                            <div class="catalog__wrapper">
+                                <img class="catalog__img" src="images/05-lamp1.png" alt="Lamp image">
+                            </div>
+                            <div class="catalog__favorite">
+                                <p class="catalog__desc">Pendant lamp</p>
+                                <div class="catalog__star" data-rateyo-rating="3.6"></div>
+                                <p class="catalog__cost">23<span>$</span></p>
+                            </div>
+                        </li>
+                        <li class="catalog__point">
+                            <div class="catalog__wrapper">
+                                <img class="catalog__img" src="images/05-lamp2.png" alt="Lamp image">
+                            </div>
+                            <div class="catalog__favorite">
+                                <p class="catalog__desc">Pendant lamp</p>
+                                <div class="catalog__star" data-rateyo-rating="4"></div>
+                                <p class="catalog__cost">23<span>$</span></p>
+                            </div>
+                        </li>
+                        <li class="catalog__point">
+                            <div class="catalog__wrapper">
+                                <img class="catalog__img" src="images/05-lamp3.png" alt="Lamp image">
+                            </div>
+                            <div class="catalog__favorite">
+                                <p class="catalog__desc">Pendant lamp</p>
+                                <div class="catalog__star" data-rateyo-rating="3.5"></div>
+                                <p class="catalog__cost">23<span>$</span></p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="catalog__content">
-                <img src="images/about-img1.png" alt="">
+
+                <ul class="catalog__items">
+                    <li class="product__item">
+                        @@include('../index_html/_product-card.html', {
+                        "numberImg": "1",
+                        "nameImg": "Wooden radio",
+                        "price": "29.00"
+                        })
+                    </li>
+                    <li class="product__item">
+                        @@include('../index_html/_product-card.html', {
+                        "numberImg": "2",
+                        "nameImg": "Wooden chair",
+                        "price": "29.00"
+                        })
+                    </li>
+                    <li class="product__item">
+                        @@include('../index_html/_product-card.html', {
+                        "numberImg": "3",
+                        "nameImg": "White chair",
+                        "price": "29.00"
+                        })
+                    </li>
+                    <li class="product__item">
+                        @@include('../index_html/_product-card.html', {
+                        "numberImg": "4",
+                        "nameImg": "Retro table",
+                        "price": "29.00"
+                        })
+                    </li>
+                    <li class="product__item">
+                        @@include('../index_html/_product-card.html', {
+                        "numberImg": "5",
+                        "nameImg": "Wooden radio",
+                        "price": "29.00"
+                        })
+                    </li>
+                    <li class="product__item">
+                        @@include('../index_html/_product-card.html', {
+                        "numberImg": "4",
+                        "nameImg": "Retro table",
+                        "price": "29.00"
+                        })
+                    </li>
+                    <li class="product__item">
+                        @@include('../index_html/_product-card.html', {
+                        "numberImg": "6",
+                        "nameImg": "Wooden chair",
+                        "price": "29.00"
+                        })
+                    </li>
+                    <li class="product__item">
+                        @@include('../index_html/_product-card.html', {
+                        "numberImg": "7",
+                        "nameImg": "White chair",
+                        "price": "29.00"
+                        })
+                    </li>
+                    <li class="product__item">
+                        @@include('../index_html/_product-card.html', {
+                        "numberImg": "8",
+                        "nameImg": "Retro table",
+                        "price": "28.00"
+                        })
+                    </li>
+                    <li class="product__item">
+                        @@include('../index_html/_product-card.html', {
+                        "numberImg": "31",
+                        "nameImg": "Wooden chair",
+                        "price": "29.00"
+                        })
+                    </li>
+                    <li class="product__item">
+                        @@include('../index_html/_product-card.html', {
+                        "numberImg": "7",
+                        "nameImg": "White chair",
+                        "price": "29.00"
+                        })
+                    </li>
+                    <li class="product__item">
+                        @@include('../index_html/_product-card.html', {
+                        "numberImg": "8",
+                        "nameImg": "Retro table",
+                        "price": "28.00"
+                        })
+                    </li>
+
+                </ul>
+
             </div>
         </div>
 

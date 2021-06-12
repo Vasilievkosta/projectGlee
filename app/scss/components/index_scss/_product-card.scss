@@ -7,11 +7,15 @@
 
     &__wrap {
         position: relative;
+        min-height: 206px;
+        display: flex;
+        margin-bottom: 50px;
     }
 
     &__img {
         margin: 0 auto;
         object-fit: contain;
+
     }
 
     &__title {
@@ -78,7 +82,7 @@
 
         &:focus {
             outline: 0;
-            color: $blue-200;
+            background-color: $blue-200;
         }
     }
 }

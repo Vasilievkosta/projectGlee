@@ -120,34 +120,31 @@
             }
         }
 
-        &--project {
-            &:before {
-                content: '';
-                position: absolute;
-                background-image: url('../images/icon/projects.svg');
-                width: 37px;
-                height: 38px;
-                top: 50%;
-                right: calc(100% + 10px);
-                transform: translateY(-50%);
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url('../images/icon/projects.svg');
+            width: 37px;
+            height: 38px;
+            top: 50%;
+            right: calc(100% + 10px);
+            transform: translateY(-50%);
 
-                @include r($L) {
-                    display: none;
-                }
+            @include r($L) {
+                display: none;
+            }
 
-                @include r($M) {
-                    display: initial;
-                }
+            @include r($M) {
+                display: initial;
+            }
 
-                @include r($S) {
-                    display: none;
-                }
+            @include r($S) {
+                display: none;
             }
         }
 
         &--revenue {
             &:before {
-                @extend .mission__item--project:before;
                 background-image: url('../images/icon/revenue.svg');
                 width: 43px;
                 height: 40px;
@@ -156,7 +153,6 @@
 
         &--awards {
             &:before {
-                @extend .mission__item--project:before;
                 background-image: url('../images/icon/awards.svg');
                 width: 42px;
                 height: 42px;
