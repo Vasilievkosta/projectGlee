@@ -7,10 +7,16 @@ $(function () {
 
     $('.catalog__btn--list').on('click', function () {
         $('.catalog__items').addClass('catalog__items--list');
+        $('.pagination').addClass('pagination__active');
+        document.querySelector('.page-top__title').innerHTML = "Product list 2";
+        document.querySelector('.breadcrumbs__link--last').innerHTML = "Product list 2";
     });
 
     $('.catalog__btn--grid').on('click', function () {
         $('.catalog__items').removeClass('catalog__items--list');
+        $('.pagination').removeClass('pagination__active');
+        document.querySelector('.page-top__title').innerHTML = "Product list 1";
+        document.querySelector('.breadcrumbs__link--last').innerHTML = "Product list 1";
     });
 
 
@@ -71,9 +77,18 @@ $(function () {
     $(function () {
 
         $(".catalog__star").rateYo({
-            starwidth: "17px",
-            normalFill: "#cecece",
-            ratedFill: "#ffc35b",
+            starWidth: "10px",
+            spacing: "6px",
+            normalFill: "#d6d6d6",
+            ratedFill: "#ffcc00",
+            readOnly: true
+        });
+
+        $(".product-card__star").rateYo({
+            starWidth: "18px",
+            spacing: "12px",
+            normalFill: "#d6d6d6",
+            ratedFill: "#ffcc00",
             readOnly: true
         });
 
@@ -86,6 +101,8 @@ $(function () {
     //     $(this).next().slideToggle();
     //     $(this).toggleClass('footer-top__list--active');
     // });
+
+
 
     const containerProduct = document.querySelector('[data-ref="container-product"]');
     const containerDesign = document.querySelector('[data-ref="container-design"]');

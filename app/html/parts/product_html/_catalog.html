@@ -1,5 +1,6 @@
 <section class="catalog">
-    <div class="container">
+    <div class="wrap">
+
         <div class="catalog__control">
             <button class="catalog__btn catalog__btn--grid">
                 <svg class="svg catalog__svg catalog__svg--active" width="15" height="15">
@@ -92,7 +93,7 @@
                             </div>
                             <div class="catalog__favorite">
                                 <p class="catalog__desc">Pendant lamp</p>
-                                <div class="catalog__star" data-rateyo-rating="3.6"></div>
+                                <div class="catalog__star" data-rateyo-rating="4"></div>
                                 <p class="catalog__cost">23<span>$</span></p>
                             </div>
                         </li>
@@ -112,8 +113,8 @@
                             </div>
                             <div class="catalog__favorite">
                                 <p class="catalog__desc">Pendant lamp</p>
-                                <div class="catalog__star" data-rateyo-rating="3.5"></div>
-                                <p class="catalog__cost">23<span>$</span></p>
+                                <div class="catalog__star" data-rateyo-rating="3.6"></div>
+                                <p class="catalog__cost">25<span>$</span></p>
                             </div>
                         </li>
                     </ul>
@@ -126,92 +127,123 @@
                         @@include('../index_html/_product-card.html', {
                         "numberImg": "1",
                         "nameImg": "Wooden radio",
-                        "price": "29.00"
+                        "price": "29.00",
+                        "paragraf": "Consectetur adipisicing elit, adipisicing elit, sed do eiusmod tempor incididunt"
                         })
+                        <div class="product-card__paragraf-out">
+                            <p>
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            </p>
+                        </div>
                     </li>
                     <li class="product__item">
                         @@include('../index_html/_product-card.html', {
                         "numberImg": "2",
                         "nameImg": "Wooden chair",
-                        "price": "29.00"
+                        "price": "29.00",
+                        "paragraf": "Consectetur adipisicing elit, adipisicing elit, sed do eiusmod tempor incididunt"
                         })
                     </li>
                     <li class="product__item">
                         @@include('../index_html/_product-card.html', {
                         "numberImg": "3",
                         "nameImg": "White chair",
-                        "price": "29.00"
+                        "price": "29.00",
+                        "paragraf": "Consectetur adipisicing elit, adipisicing elit, sed do eiusmod tempor incididunt"
                         })
                     </li>
                     <li class="product__item">
                         @@include('../index_html/_product-card.html', {
                         "numberImg": "4",
                         "nameImg": "Retro table",
-                        "price": "29.00"
+                        "price": "29.00",
+                        "paragraf": "Consectetur adipisicing elit, adipisicing elit, sed do eiusmod tempor incididunt"
                         })
                     </li>
                     <li class="product__item">
                         @@include('../index_html/_product-card.html', {
                         "numberImg": "5",
                         "nameImg": "Wooden radio",
-                        "price": "29.00"
+                        "price": "29.00",
+                        "paragraf": "Consectetur adipisicing elit, adipisicing elit, sed do eiusmod tempor incididunt"
                         })
                     </li>
                     <li class="product__item">
                         @@include('../index_html/_product-card.html', {
                         "numberImg": "4",
                         "nameImg": "Retro table",
-                        "price": "29.00"
+                        "price": "29.00",
+                        "paragraf": "Consectetur adipisicing elit, adipisicing elit, sed do eiusmod tempor incididunt"
                         })
                     </li>
                     <li class="product__item">
                         @@include('../index_html/_product-card.html', {
                         "numberImg": "6",
                         "nameImg": "Wooden chair",
-                        "price": "29.00"
+                        "price": "29.00",
+                        "paragraf": "Consectetur adipisicing elit, adipisicing elit, sed do eiusmod tempor incididunt"
                         })
                     </li>
                     <li class="product__item">
                         @@include('../index_html/_product-card.html', {
                         "numberImg": "7",
                         "nameImg": "White chair",
-                        "price": "29.00"
+                        "price": "29.00",
+                        "paragraf": "Consectetur adipisicing elit, adipisicing elit, sed do eiusmod tempor incididunt"
                         })
                     </li>
                     <li class="product__item">
                         @@include('../index_html/_product-card.html', {
                         "numberImg": "8",
                         "nameImg": "Retro table",
-                        "price": "28.00"
+                        "price": "29.00",
+                        "paragraf": "Consectetur adipisicing elit, adipisicing elit, sed do eiusmod tempor incididunt"
                         })
                     </li>
                     <li class="product__item">
                         @@include('../index_html/_product-card.html', {
                         "numberImg": "31",
                         "nameImg": "Wooden chair",
-                        "price": "29.00"
+                        "price": "29.00",
+                        "paragraf": "Consectetur adipisicing elit, adipisicing elit, sed do eiusmod tempor incididunt"
                         })
                     </li>
                     <li class="product__item">
                         @@include('../index_html/_product-card.html', {
                         "numberImg": "7",
                         "nameImg": "White chair",
-                        "price": "29.00"
+                        "price": "29.00",
+                        "paragraf": "Consectetur adipisicing elit, adipisicing elit, sed do eiusmod tempor incididunt"
                         })
                     </li>
                     <li class="product__item">
                         @@include('../index_html/_product-card.html', {
                         "numberImg": "8",
                         "nameImg": "Retro table",
-                        "price": "28.00"
+                        "price": "29.00",
+                        "paragraf": "Consectetur adipisicing elit, adipisicing elit, sed do eiusmod tempor incididunt"
                         })
                     </li>
-
                 </ul>
-
             </div>
+
         </div>
-
-
+        <div class="pagination">
+            <ul class="pagination__list">
+                <li class="pagination__item">
+                    <a class="pagination__link pagination__link--active" href="#">1</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">3</a>
+                </li>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">Next</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </section>

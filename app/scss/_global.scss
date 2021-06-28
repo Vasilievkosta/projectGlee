@@ -117,3 +117,38 @@ main {
         }
     }
 }
+
+.pagination {
+    display: none;
+
+    &__active {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0;
+        border: 1px solid blue;
+    }
+
+    &__list {
+        display: flex;
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 1;
+        color: #243f4d;
+    }
+
+    &__link {
+        padding: 15px 20px;
+        border: 1px solid #a3bbc8;
+        margin-right: 15px;
+
+        &--active {
+            background-color: #cecece;
+            color: #fff;
+        }
+
+        &:hover {
+            background-color: #cecece;
+            color: #243f4d;
+        }
+    }
+}

@@ -30,6 +30,12 @@
         white-space: nowrap;
     }
 
+    &__star,
+    &__paragraf,
+    &__paragraf-out {
+        display: none;
+    }
+
     &__list {
         display: flex;
         justify-content: space-between;
