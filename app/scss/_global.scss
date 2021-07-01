@@ -123,9 +123,9 @@ main {
 
     &__active {
         display: flex;
-        justify-content: center;
-        padding: 30px 0;
-        border: 1px solid blue;
+        justify-content: start;
+        padding: 30px 0 30px 300px;
+        margin-bottom: 100px;
     }
 
     &__list {
@@ -133,22 +133,23 @@ main {
         @extend %rubik-400;
         font-size: 16px;
         line-height: 1;
-        color: #243f4d;
+        color: $black-300;
     }
 
     &__link {
         padding: 15px 20px;
-        border: 1px solid #a3bbc8;
+        border: 1px solid $blue-100;
         margin-right: 15px;
+        transition: background-color 0.3s;
 
         &--active {
-            background-color: #cecece;
-            color: #fff;
+            background-color: $grey-500;
+            color: $white;
         }
 
         &:hover {
-            background-color: #cecece;
-            color: #243f4d;
+            background-color: $grey-500;
+            color: $black-300;
         }
     }
 }
