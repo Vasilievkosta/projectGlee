@@ -174,14 +174,26 @@
     }
 
     &__items {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-gap: 30px;
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        // grid-template-rows: repeat(3, 1fr);
+        // grid-gap: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         margin-bottom: 185px;
 
+        @include r ($XL) {
+            justify-content: space-around;
+        }
+
+        & .product__item {
+            min-width: 270px;
+            margin-bottom: 30px;
+        }
+
         &--list {
-            display: block;
+            // display: block;
             margin-bottom: 70px;
         }
 
@@ -211,8 +223,14 @@
                         }
 
                         &:before {
-                            content: 'sds sds 234';
+                            content: 'add to card';
                         }
+
+                        width: 100%;
+                        border-radius: 1px;
+                        border: 1px solid red;
+                        color: green;
+                        text-transform: uppercase;
                     }
                 }
             }
@@ -229,6 +247,13 @@
                     padding: 80px 25px;
                     min-width: 370px;
                     height: 500px;
+
+                    @include r($L) {
+                        margin-right: 25px;
+                        padding: 25px;
+                        min-width: 300px;
+                        height: 400px;
+                    }
                 }
 
                 &__img {
@@ -245,6 +270,11 @@
                     font-weight: 400;
                     color: $black-250;
                     margin: 95px 0 15px;
+
+                    @include r ($XL) {
+                        white-space: normal;
+                        margin-top: 15px;
+                    }
                 }
 
                 &__star {
@@ -275,6 +305,10 @@
                     transform: translate(340%, 60px);
                     width: 100px;
                     box-shadow: none;
+
+                    @include r($XL) {
+                        top: 70%;
+                    }
                 }
 
                 &__btn {
