@@ -1,5 +1,6 @@
 .footer {
-    @extend %rubik-400;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
     font-size: 14px;
     line-height: 2.3;
     color: $grey-850;
@@ -42,7 +43,8 @@
     }
 
     &__title {
-        @extend %dmsans-700;
+        font-family: 'DMSans', sans-serif;
+        font-weight: 700;
         margin: 10px 0;
         font-size: 16px;
         color: $blue-600;
@@ -89,7 +91,8 @@
         outline: 0;
 
         &::-webkit-input-placeholder {
-            @extend %dmsans-400;
+            font-family: 'DMSans', sans-serif;
+            font-weight: 400;
             font-size: 12px;
             color: $blue-700;
             padding: 0 10px;

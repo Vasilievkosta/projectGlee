@@ -60,14 +60,16 @@
     }
 
     &__title {
-        @extend %dmsans-700;
+        font-family: 'DMSans', sans-serif;
+        font-weight: 700;
         font-size: 26px;
         line-height: 1.3;
         @include clamp(2);
     }
 
     &__text {
-        @extend %rubik-400;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
         font-size: 16px;
         line-height: 2;
         margin: 15px 0;
@@ -76,7 +78,8 @@
 
     &__link {
 
-        @extend %rubik-500;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
         font-size: 14px;
         background-color: transparent;
         border: 1px solid $grey-600;

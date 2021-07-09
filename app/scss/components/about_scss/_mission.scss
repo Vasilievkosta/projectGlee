@@ -44,7 +44,8 @@
         position: relative;
         padding: 100px 0 0 180px;
         margin-bottom: 40px;
-        @extend %rubik-400;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
         font-size: 16px;
         color: $black-300;
         line-height: 2;
@@ -59,7 +60,8 @@
         &:before {
             content: '12';
             position: absolute;
-            @extend %rubik-700;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 700;
             font-size: 140px;
             color: $blue-100;
             top: 0;
@@ -80,7 +82,8 @@
     }
 
     &__text {
-        @extend %rubik-400;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
         font-size: 16px;
         color: $black-300;
         line-height: 2;
@@ -161,14 +164,16 @@
     }
 
     &__stat {
-        @extend %dmsans-700;
+        font-family: 'DMSans', sans-serif;
+        font-weight: 700;
         font-size: 36px;
         line-height: 1;
         color: $black-300;
     }
 
     &__name {
-        @extend %dmsans-700;
+        font-family: 'DMSans', sans-serif;
+        font-weight: 700;
         font-size: 16px;
         color: $black-200;
     }

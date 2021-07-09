@@ -4,7 +4,8 @@ body {
 }
 
 body {
-    @extend %rubik-400;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     font-size: 16px;
@@ -60,7 +61,8 @@ main {
 }
 
 .title {
-    @extend %dmsans-700;
+    font-family: 'DMSans', sans-serif;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     color: $black-600;
@@ -70,7 +72,8 @@ main {
 }
 
 .mix-nav {
-    @extend %dmsans-700;
+    font-family: 'DMSans', sans-serif;
+    font-weight: 700;
     font-size: 16px;
     color: $grey-700;
     display: flex;
@@ -130,7 +133,8 @@ main {
 
     &__list {
         display: flex;
-        @extend %rubik-400;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
         font-size: 16px;
         line-height: 1;
         color: $black-300;

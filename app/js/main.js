@@ -128,6 +128,17 @@ burger.addEventListener('click', function () {
     menu.classList.toggle('menu__list--active');
 });
 
+//added button filter
+
+let filterBtn = document.querySelector('.catalog__filter-btn');
+let filter = document.querySelector('.catalog__filter');
+
+filterBtn.addEventListener('click', function () {
+
+    filter.classList.toggle('catalog__filter--active');
+
+});
+
 //fixed header
 
 // const header = document.querySelector('.header');

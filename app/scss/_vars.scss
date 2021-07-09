@@ -17,7 +17,6 @@ $blue-550: #585858;
 
 $blue-600: #333366;
 $blue-700: #234969;
-
 $red: red;
 $white: #fff;
 $beige-50: #fff7f0;
@@ -44,60 +43,6 @@ $L: 1023px;
 $M: 767px;
 $S: 575px;
 
-%rubik-300 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-}
-
-%rubik-400 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-}
-
-%rubik-500 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-}
-
-%rubik-700 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-}
-
-%dmsans-400 {
-    font-family: 'DMSans', sans-serif;
-    font-weight: 400;
-}
-
-%dmsans-500 {
-    font-family: 'DMSans', sans-serif;
-    font-weight: 500;
-}
-
-%dmsans-700 {
-    font-family: 'DMSans', sans-serif;
-    font-weight: 700;
-}
-
-%poppins-600 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
-
-%poppins-700 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-}
-
-%myriadpro-400 {
-    font-family: 'MyriadPro', sans-serif;
-    font-weight: 400;
-}
-
-%nunitoo-700 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-}
 
 @function max($numbers...) {
     @return n#{a}x(#{$numbers});

@@ -1,5 +1,7 @@
 .service {
     background-color: $beige-300;
+    font-family: 'DMSans', sans-serif;
+    font-weight: 700;
 
     &__list {
         display: flex;
@@ -28,14 +30,12 @@
     }
 
     &__title {
-        @extend %dmsans-700;
         font-size: 36px;
         color: $black-300;
         line-height: 2;
     }
 
     &__text {
-        @extend %dmsans-700;
         font-size: 18px;
         color: $black-300;
     }
