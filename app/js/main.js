@@ -7,14 +7,16 @@ $(function () {
 
     $('.catalog__btn--list').on('click', function () {
         $('.catalog__items').addClass('catalog__items--list');
-        $('.pagination').addClass('pagination__active');
+        // $('.pagination').addClass('pagination__active');
+        $('.pagination__list').addClass('pagination__list--active');
         document.querySelector('.page-top__title').innerHTML = "Product list 2";
         document.querySelector('.breadcrumbs__link--last').innerHTML = "Product list 2";
     });
 
     $('.catalog__btn--grid').on('click', function () {
         $('.catalog__items').removeClass('catalog__items--list');
-        $('.pagination').removeClass('pagination__active');
+        // $('.pagination').removeClass('pagination__active');
+        $('.pagination__list').removeClass('pagination__list--active');
         document.querySelector('.page-top__title').innerHTML = "Product list 1";
         document.querySelector('.breadcrumbs__link--last').innerHTML = "Product list 1";
     });

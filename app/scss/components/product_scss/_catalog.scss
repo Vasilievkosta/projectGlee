@@ -19,6 +19,10 @@
         &:hover {
             border-color: $blue-200;
         }
+
+        @include r ($S) {
+            display: none;
+        }
     }
 
     &__filter-btn {
@@ -71,10 +75,16 @@
     }
 
     &__filter {
-        min-width: 300px;
+        min-width: 270px;
+        margin-right: 30px;
 
         @include r ($XL) {
             display: none;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        @include r ($M) {
             width: 100%;
         }
 
@@ -229,10 +239,39 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: 185px;
+        margin-bottom: 90px;
 
         @include r ($XL) {
             justify-content: space-around;
+        }
+
+        & .product-card {
+            &__star {
+                @include r ($S) {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+            &__paragraf {
+                @include r ($S) {
+                    display: block;
+                    @include clamp(3);
+                }
+            }
+
+            &__list {
+                @include r ($S) {
+                    width: 100px;
+                }
+            }
+
+            &__link {
+                @include r ($S) {
+                    display: none;
+                }
+            }
+
         }
 
         & .product__item {
@@ -241,7 +280,7 @@
         }
 
         &--list {
-            margin-bottom: 30px;
+            margin-bottom: 60px;
         }
 
         &.catalog__items--list {
@@ -254,6 +293,7 @@
                 border-radius: 0;
                 cursor: default;
                 position: relative;
+                width: 100%;
 
                 &:not(:nth-child(-n+4)) {
                     display: none;
@@ -285,6 +325,10 @@
                         font-size: 15px;
                         line-height: 2;
 
+                        @include r ($M) {
+                            transform: translate(-20%, 10px);
+                        }
+
                         &:hover {
                             color: $white;
                             background-color: $blue-100;
@@ -293,11 +337,13 @@
                 }
             }
 
-
-
             .product-card {
                 flex-direction: row;
                 justify-content: flex-start;
+
+                @include r ($M) {
+                    display: block;
+                }
 
                 &__wrap {
                     border: 2px solid $grey-250;
@@ -312,6 +358,10 @@
                         min-width: 300px;
                         height: 400px;
                     }
+
+                    @include r($M) {
+                        margin-right: 0;
+                    }
                 }
 
                 &__img {
@@ -320,6 +370,10 @@
 
                 &__text {
                     text-align: left;
+
+                    @include r($M) {
+                        text-align: center;
+                    }
                 }
 
                 &__title {
@@ -338,6 +392,11 @@
                 &__star {
                     display: block;
                     margin-bottom: 40px;
+
+                    @include r ($M) {
+                        margin: 0 auto;
+                        padding-bottom: 20px;
+                    }
                 }
 
                 &__price {
@@ -357,6 +416,11 @@
                     color: $black-300;
                     margin-bottom: 20px;
                     text-align: left;
+                    @include clamp(3);
+
+                    @include r ($M) {
+                        text-align: center;
+                    }
                 }
 
                 &__list {
@@ -366,6 +430,10 @@
 
                     @include r($XL) {
                         top: 70%;
+                    }
+
+                    @include r($M) {
+                        transform: translate(50%, 50px);
                     }
                 }
 
