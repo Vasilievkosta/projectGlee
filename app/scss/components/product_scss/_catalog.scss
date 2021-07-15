@@ -142,6 +142,10 @@
         color: $grey-650;
     }
 
+    &__star {
+        z-index: -5;
+    }
+
     &__price {
         margin-bottom: 80px;
         max-width: 270px;

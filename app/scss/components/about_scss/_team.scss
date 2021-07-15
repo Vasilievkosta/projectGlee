@@ -44,6 +44,7 @@
         padding: 20px 70px 20px 15px;
         border-radius: 5px;
         transition: background-color 0.3s;
+        cursor: pointer;
 
         @include r ($L) {
             margin-left: 50%;

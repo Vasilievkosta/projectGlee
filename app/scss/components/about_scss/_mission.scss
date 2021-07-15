@@ -51,7 +51,7 @@
         line-height: 2;
         overflow: hidden;
         white-space: normal;
-        max-width: 500px;
+        // max-width: 500px;
 
         @include r($L) {
             margin-bottom: 10px;
@@ -78,7 +78,7 @@
     &__title {
         text-align: left;
         margin-bottom: 30px;
-        max-width: 520px;
+        // max-width: 520px;
     }
 
     &__text {
@@ -126,7 +126,8 @@
         &:before {
             content: '';
             position: absolute;
-            background-image: url('../images/icon/projects.svg');
+            background-image: url('../images/stack/sprite.svg#icon--projects');
+            background-repeat: no-repeat;
             width: 37px;
             height: 38px;
             top: 50%;
@@ -148,7 +149,7 @@
 
         &--revenue {
             &:before {
-                background-image: url('../images/icon/revenue.svg');
+                background-image: url('../images/stack/sprite.svg#icon--revenue');
                 width: 43px;
                 height: 40px;
             }
@@ -156,7 +157,7 @@
 
         &--awards {
             &:before {
-                background-image: url('../images/icon/awards.svg');
+                background-image: url('../images/stack/sprite.svg#icon--awards');
                 width: 42px;
                 height: 42px;
             }

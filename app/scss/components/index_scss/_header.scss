@@ -1,10 +1,25 @@
-﻿.header__fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    background-color: $beige-200;
+﻿.header {
+
+    &__wrap {
+
+        &--fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            background-color: $beige-200;
+        }
+
+    }
+
+    &__fixed {
+        margin-top: 70px;
+
+        @include r ($M) {
+            margin-top: 119px;
+        }
+    }
 }
 
 .nav {
@@ -13,13 +28,22 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
 
-.nav__fixed {
-    padding: 10px 0;
+    @include r ($M) {
+        padding: 10px 0;
+    }
+
+    &__fixed {
+        padding: 10px 0;
+    }
 }
 
 .logo {
+
+    @include r ($S) {
+        margin-bottom: 10px;
+    }
+
     &__img {
         max-height: 39px;
     }
@@ -149,7 +173,6 @@
 
     @include r ($S) {
         width: 100%;
-        margin-top: 40px;
         justify-content: center;
     }
 

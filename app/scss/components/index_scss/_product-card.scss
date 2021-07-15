@@ -36,6 +36,10 @@
         display: none;
     }
 
+    &__star {
+        z-index: -5;
+    }
+
     &__list {
         display: flex;
         justify-content: space-between;
