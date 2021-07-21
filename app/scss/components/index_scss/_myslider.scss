@@ -70,12 +70,12 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
-            width: 610px;
-            height: 634px;
+            width: 50%;
+            height: 80%;
             border-radius: 50%;
             position: absolute;
             top: 100px;
-            left: 57%;
+            left: 130vw;
             z-index: -5;
 
             @include r ($XL) {

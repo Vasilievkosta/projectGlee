@@ -27,7 +27,7 @@
     }
 
     &__content {
-        padding: 0 0 90px 30px;
+        padding: 70px 0 20px 30px;
         width: 50%;
         margin-left: auto;
 
@@ -41,9 +41,26 @@
     }
 
     &__number {
-        position: relative;
-        padding: 100px 0 0 180px;
-        margin-bottom: 40px;
+        display: flex;
+    }
+
+    &__day {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        font-size: 140px;
+        color: $blue-100;
+        margin-right: 25px;
+        line-height: 1;
+
+        @include r($L) {
+            line-height: 1;
+            top: auto;
+            bottom: -10px;
+        }
+    }
+
+    &__work {
+        padding-top: 30px;
         font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 16px;
@@ -51,34 +68,16 @@
         line-height: 2;
         overflow: hidden;
         white-space: normal;
-        // max-width: 500px;
 
         @include r($L) {
             margin-bottom: 10px;
-        }
-
-        &:before {
-            content: '12';
-            position: absolute;
-            font-family: 'Rubik', sans-serif;
-            font-weight: 700;
-            font-size: 140px;
-            color: $blue-100;
-            top: 0;
-            left: 0;
-
-            @include r($L) {
-                line-height: 1;
-                top: auto;
-                bottom: -10px;
-            }
         }
     }
 
     &__title {
         text-align: left;
         margin-bottom: 30px;
-        // max-width: 520px;
+        @include clamp(2);
     }
 
     &__text {
@@ -87,9 +86,8 @@
         font-size: 16px;
         color: $black-300;
         line-height: 2;
-        margin-bottom: 70px;
-        max-height: 130px;
-        overflow: hidden;
+        margin-bottom: 55px;
+        @include clamp(4);
 
         @include r($XL) {
             margin-bottom: 20px;
@@ -99,8 +97,9 @@
     &__list {
         display: flex;
         justify-content: space-around;
-        padding-top: 20px;
+        padding-top: 35px;
         border-top: 2px solid $grey-500;
+        margin-bottom: 60px;
 
         @include r($XL) {
             justify-content: space-evenly;

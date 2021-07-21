@@ -97,6 +97,10 @@
             color: $blue-700;
             padding: 0 10px;
         }
+
+        &:focus {
+            background-color: $beige-300;
+        }
     }
 
     &__btn {
