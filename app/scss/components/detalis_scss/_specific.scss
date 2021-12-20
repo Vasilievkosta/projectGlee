@@ -1,0 +1,48 @@
+.specific {
+    &__inner {
+        display: flex;
+    }
+
+    &__slider {
+        width: 550px;
+        
+        display: flex;
+    }
+
+    &__small {
+        width: 138px;
+        height: 530px;
+        margin-right: 25px;
+        border: 1px solid red;
+    }
+
+    &__small-img {
+        margin-bottom: 25px;
+        width: 138px;
+        height: 160px;
+        // object-fit: contain;
+        cursor: pointer;
+        border: 1px solid blue;
+    }
+
+    &__imgSmall {
+        width: 138px;
+        height: 160px;
+        object-fit: contain;
+    }
+    
+    &__big-img {
+        width: 287px;
+        // height: 530px;
+        border: 1px solid green;
+    }
+
+    
+
+    &__title {
+    font-family: 'Rubik', sans-serif;
+     font-weight: 400;
+        font-size: 40px;    
+    color: $black-250;
+    }
+}

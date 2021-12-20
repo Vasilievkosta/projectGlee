@@ -52,27 +52,42 @@ $(function () {
         slidesToShow: 5,
         slidesToScroll: 3,
         responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
             }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
         ]
+    });
+
+    $('.specific__small').slick({
+        asNavFor: '.specific__big',
+        focusOnSelect: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        vertical: true,
+        draggable: false
+    });
+
+    $('.specific__big').slick({
+        asNavFor: '.specific__small',
+        draggable: false,
+        arrows: false
     });
 
 
