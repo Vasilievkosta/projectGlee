@@ -75,6 +75,23 @@ $(function () {
         ]
     });
 
+    // $('.specific__small').slick({
+    //     asNavFor: '.specific__big',
+    //     focusOnSelect: true,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     vertical: true,
+    //     draggable: false
+    // });
+
+    // $('.specific__big').slick({
+    //     asNavFor: '.specific__small',
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     draggable: false,
+    //     arrows: false
+    // });
+
     $('.specific__small').slick({
         asNavFor: '.specific__big',
         focusOnSelect: true,
@@ -82,13 +99,18 @@ $(function () {
         slidesToScroll: 1,
         vertical: true,
         draggable: false
+
     });
 
     $('.specific__big').slick({
         asNavFor: '.specific__small',
-        draggable: false,
-        arrows: false
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        draggable: false
+
     });
+
 
 
     $(function () {

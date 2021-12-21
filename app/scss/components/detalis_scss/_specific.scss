@@ -1,28 +1,31 @@
 .specific {
     &__inner {
         display: flex;
+        padding-top: 70px;
     }
 
     &__slider {
         width: 550px;
-        
-        display: flex;
+        margin-right: 70px;
+        // display: flex;
     }
 
     &__small {
         width: 138px;
-        height: 530px;
+        // height: 530px;
         margin-right: 25px;
-        border: 1px solid red;
+        margin-bottom: 50px;     
+        // border: 1px solid red;
+        
     }
 
     &__small-img {
         margin-bottom: 25px;
         width: 138px;
         height: 160px;
-        // object-fit: contain;
+        // object-fit: cover;
         cursor: pointer;
-        border: 1px solid blue;
+        // border: 1px solid blue;
     }
 
     &__imgSmall {
@@ -32,12 +35,15 @@
     }
     
     &__big-img {
-        width: 287px;
-        // height: 530px;
-        border: 1px solid green;
+        width: 387px;
+        height: 530px;
+        // border: 1px solid green;
     }
 
-    
+    &__content {
+        width: 550px;
+        border: 1px solid blue;
+    }
 
     &__title {
     font-family: 'Rubik', sans-serif;
