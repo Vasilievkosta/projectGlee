@@ -75,23 +75,6 @@ $(function () {
         ]
     });
 
-    // $('.specific__small').slick({
-    //     asNavFor: '.specific__big',
-    //     focusOnSelect: true,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     vertical: true,
-    //     draggable: false
-    // });
-
-    // $('.specific__big').slick({
-    //     asNavFor: '.specific__small',
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     draggable: false,
-    //     arrows: false
-    // });
-
     $('.specific__small').slick({
         asNavFor: '.specific__big',
         focusOnSelect: true,
@@ -124,6 +107,14 @@ $(function () {
         });
 
         $(".product-card__star").rateYo({
+            starWidth: "18px",
+            spacing: "12px",
+            normalFill: "#d6d6d6",
+            ratedFill: "#ffcc00",
+            readOnly: true
+        });
+
+        $(".specific__star").rateYo({
             starWidth: "18px",
             spacing: "12px",
             normalFill: "#d6d6d6",
