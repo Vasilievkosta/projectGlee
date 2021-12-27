@@ -1,4 +1,3 @@
-
 .specific {
     &__inner {
         display: flex;
@@ -7,32 +6,32 @@
 
 
 
-    &__slider {        
+    &__slider {
         width: 550px;
         margin-right: 70px;
-        display: flex;        
+        display: flex;
     }
 
     &__small {
-        
+
         width: 138px;
         // height: 530px;
         margin-right: 25px;
     }
 
-    &__smallImg {        
+    &__smallImg {
         cursor: pointer;
 
         &:not(:last-child) {
             margin-bottom: 25px;
         }
-        
+
     }
 
     &__imgSmall {
         width: 138px;
-        height: 160px; 
-        
+        height: 160px;
+
         &:not(:last-child) {
             margin-bottom: 25px;
         }
@@ -41,12 +40,12 @@
     &__big {
         width: 387px;
     }
-    
-    &__bigImg {        
+
+    &__bigImg {
         // width: 387px;
         // height: 530px;
         // border: 1px solid green;
-        
+
     }
 
     &__content {
@@ -55,11 +54,11 @@
     }
 
     &__title {
-    font-family: 'Rubik', sans-serif;
-     font-weight: 400;
-        font-size: 40px;    
-    color: $black-250;
-    margin: 10px 0;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        color: $black-250;
+        margin: 10px 0;
     }
 
     &__star {
@@ -67,7 +66,7 @@
     }
 
     &__price {
-        font-family: 'Rubik' sans-serif;
+        font-family: 'Rubik'sans-serif;
         font-weight: 400;
         font-size: 30px;
         line-height: 1.5;
@@ -75,10 +74,10 @@
     }
 
     &__text {
-    font-family: 'Rubik', sans-serif;
-     font-weight: 400;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
         font-size: 16px;
-        line-height: 2;   
+        line-height: 2;
         color: $black-300;
         margin-bottom: 30px;
     }
@@ -90,10 +89,10 @@
     &__category {
         font-family: 'Rubik', sans-serif;
         font-weight: 400;
-           font-size: 16px;
-           line-height: 2;   
-           color: $black-300;
+        font-size: 16px;
+        line-height: 2;
+        color: $black-300;
     }
 
-    
+
 }

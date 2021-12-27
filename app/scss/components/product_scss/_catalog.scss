@@ -3,6 +3,12 @@
         display: flex;
         justify-content: center;
         padding: 50px 0 45px 0;
+        align-items: center;
+        color: $black-300;
+    }
+
+    &__view {
+        margin-right: 20px;
     }
 
     &__btn {
@@ -24,6 +30,7 @@
             display: none;
         }
     }
+
 
     &__filter-btn {
         background-color: $blue-100;
@@ -454,8 +461,58 @@
     }
 }
 
+.jq-selectbox__select {
+    height: 32px;
+    padding: 0 30px 0 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    margin-left: 30px;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: $black-300;
 
+    &:hover {
+        background: transparent;
+    }
+}
 
+.jq-selectbox__select-text {
+    min-width: 150px;
+    text-align: end;
+}
+
+.jq-selectbox__trigger {
+    border-left: none;
+}
+
+.jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 8px;
+    height: 10px;
+    border: none;
+    background-image: url(../images/stack/sprite.svg#icon--shape);
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+}
+
+.jq-selectbox.jqselect.catalog__sort.select-styler.focused.dropdown.opened,
+.jq-selectbox.jqselect.catalog__show.select-styler.focused.dropdown.opened,
+.jq-selectbox.jqselect.catalog__sort.select-styler.focused,
+.jq-selectbox.jqselect.catalog__show.select-styler.focused {
+    .jq-selectbox__select {
+        border: none;
+    }
+}
+
+.jq-selectbox li:hover {
+    background-color: $blue-150;
+    color: $white;
+}
 
 .jq-ry-container {
     padding-left: 0;
