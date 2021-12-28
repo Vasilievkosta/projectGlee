@@ -2,6 +2,8 @@ $(function () {
 
     $('.select-styler').styler();
 
+    $('.specific__number').styler();
+
     $('.catalog__svg').on('click', function () {
         $('.catalog__svg').removeClass('catalog__svg--active');
         $(this).addClass('catalog__svg--active');

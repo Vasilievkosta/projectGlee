@@ -4,8 +4,6 @@
         padding-top: 70px;
     }
 
-
-
     &__slider {
         width: 550px;
         margin-right: 70px;
@@ -13,7 +11,6 @@
     }
 
     &__small {
-
         width: 138px;
         // height: 530px;
         margin-right: 25px;
@@ -25,7 +22,6 @@
         &:not(:last-child) {
             margin-bottom: 25px;
         }
-
     }
 
     &__imgSmall {
@@ -83,7 +79,27 @@
     }
 
     &__btn {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 2;
+        text-transform: uppercase;
+        background-color: $grey-300;
+        color: $blue-300;
+        padding: 11px 57px;
+        border: 0;
+        border-radius: 5px;
+        transition: background-color 0.3s;
         margin-bottom: 50px;
+
+        &:hover {
+            color: $white;
+            background-color: $blue-100;
+        }
+
+        &:active {
+            background-color: $blue-400;
+        }
     }
 
     &__category {
@@ -93,6 +109,85 @@
         line-height: 2;
         color: $black-300;
     }
+}
 
+.jq-number {
+    position: relative;
+    padding: 0;
+    margin-right: 15px;
+}
 
+.jq-number__field {
+    width: 150px;
+    border: 1px solid $blue-100;
+    border-bottom-color: $blue-100;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.jq-number__field input {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $black-250;
+    text-align: center;
+}
+
+.jq-number__spin {
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.jq-number__spin:hover {
+    background: none;
+}
+
+.jq-number__spin.plus {
+    right: 0;
+    border-left: 1px solid $blue-100;
+}
+
+.jq-number__spin.minus {
+    left: 0;
+    border-right: 1px solid $blue-100;
+}
+
+.jq-number__spin::after {
+    content: '';
+    position: absolute;
+    border: none;
+    top: 24px;
+    left: 19px;
+    background-color: $black-250;
+    width: 9px;
+    height: 1px;
+}
+
+.jq-number__spin.minus::after {
+    content: '';
+    top: 24px;
+    left: 20px;
+    border: none;
+}
+
+.jq-number__spin.plus::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 23px;
+    background-color: $black-250;
+    width: 1px;
+    height: 9px;
 }
