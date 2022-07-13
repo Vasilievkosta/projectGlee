@@ -1,0 +1,27 @@
+@@include('../parts/index_html/_head.html', {
+"title": "Blog"
+})
+
+<body>
+
+    @@include('../parts/index_html/_header.html')
+
+    <main class="main">
+        <h1 class="sr-only">shop glee</h1>
+
+        @@include('../parts/about_html/_pagetop.html', {
+        "titleTop": "Blog", "title": "Blog"
+        })
+
+        @@include('../parts/blog_html/_blog.html')
+
+
+    </main>
+
+    @@include('../parts/index_html/_footer.html')
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
