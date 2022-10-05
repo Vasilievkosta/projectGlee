@@ -1,4 +1,32 @@
 .blog {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    margin-top: 120px;
+
+    &__item {
+        margin-bottom: 50px;
+    }
+
+    &__img {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1;
+        color: #333333;
+        margin-bottom: 35px;
+        // overflow: hidden;
+    }
+
+    &__text {
+        font-family: 'Rubik', sans-serif;
+        font-size: 16px;
+        line-height: 2;
+        font-weight: 400;
+        color: #243f4d;
+        margin-bottom: 40px;
+    }
 }
