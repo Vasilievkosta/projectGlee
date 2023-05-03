@@ -5,13 +5,15 @@ const {
     parallel,
     series
 } = require('gulp');
-const scss = require('gulp-sass');
+const scss = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
-const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin');
+const uglify = require('gulp-uglify-es').default;
+
+// const imagemin = require('gulp-imagemin');
+
 const browserSync = require('browser-sync').create();
-const del = require('del');
+const clean = require('gulp-clean');
 const svgSprite = require('gulp-svg-sprite');
 const fileInclude = require('gulp-file-include');
 
@@ -26,13 +28,13 @@ function browsersync() {
 
 function styles() {
     return src('app/scss/style.scss')
-        .pipe(scss({
-            outputStyle: 'expanded'
-        }))
-        .pipe(concat('style.min.css'))
-        .pipe(autoprefixer({
+		.pipe(autoprefixer({
             overrideBrowserslist: ['last 10 versions'],
             grid: true
+        }))
+		.pipe(concat('style.min.css'))
+        .pipe(scss({
+            outputStyle: 'expanded' // outputStyle: 'compressed'
         }))
         .pipe(dest('app/css'))
         .pipe(browserSync.stream())
@@ -67,16 +69,22 @@ function scripts() {
         .pipe(browserSync.stream())
 }
 
+// function images() {
+    // return src('app/images/**/*.*')
+        // .pipe(imagemin({
+            // interlaced: true,
+            // progressive: true,
+            // optimizationLevel: 5,
+            // svgoPlugins: [{
+                // removeViewBox: true
+            // }]
+        // }))
+        // .pipe(dest('dist/images'))
+// }
+
 function images() {
     return src('app/images/**/*.*')
-        .pipe(imagemin({
-            interlaced: true,
-            progressive: true,
-            optimizationLevel: 5,
-            svgoPlugins: [{
-                removeViewBox: true
-            }]
-        }))
+        // .pipe(imagemin())
         .pipe(dest('dist/images'))
 }
 
@@ -87,7 +95,7 @@ function fileincludes() {
         .pipe(browserSync.stream())
 }
 
-function build() {
+function building() {
     return src([
             'app/**/*.html',
             'app/css/style.min.css',
@@ -99,14 +107,15 @@ function build() {
 }
 
 function cleanDist() {
-    return del('dist');
+    return src('dist')
+		pipe(clean())
 }
 
 function watching() {
     watch(['app/**/*.scss'], styles);
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
     watch('app/html/**/*.html', fileincludes);
-    // watch(['app/**/*.html']).on('change', browserSync.reload);
+    watch(['app/**/*.html']).on('change', browserSync.reload);
 
     watch(['app/images/**/*.svg'], svgSprites);
 
@@ -119,7 +128,9 @@ exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
 
-exports.build = series(cleanDist, images, build);
+exports.build = series(cleanDist, images, building);
+// exports.build = series(cleanDist, build);
+
 exports.fileincludes = fileincludes;
 exports.svgSprites = svgSprites;
 
